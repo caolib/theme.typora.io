@@ -9,8 +9,12 @@
 
 ---
 
-> [!tip]
+> [!important]
 > **这里有两篇文章使用one-light主题，可点击查看主题详细效果展示**
 > - **[mybatis](https://htmlpreview.github.io/?https://github.com/caolib/note/blob/master/mb.html)**
 > - **[network](https://htmlpreview.github.io/?https://github.com/caolib/note/blob/master/network.html)**
 
+---
+
+> [!tip]
+> 此仓库用于发布最新发行版，日常更新则在 [**one-light-theme**](https://github.com/caolib/one-light-theme) 进行
