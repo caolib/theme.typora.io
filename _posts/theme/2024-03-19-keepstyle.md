@@ -2,7 +2,7 @@
 layout: theme
 title: Keepstyle
 category: theme
-homepage: https://github.com/KSMLC/TyporaThemeKeepStyle
+homepage: https://demo.ksmlc.cn/TyporaThemeKeepStyle/
 download: https://github.com/KSMLC/TyporaThemeKeepStyle/releases/tag/KeepStyle
 author: KS-MLC
 thumbnail: keepstyle.png
@@ -10,26 +10,42 @@ typora-root-url: ../../
 ---
 # KeepStyle主题
 
-**均为暗色主题，keepstyle_ide模仿idea主题颜色，将字体加粗等进行颜色加成，更清晰明了此时字体的状态。**
+将细节效果优化到极致，将其更符合视觉效果。
 
-将文件夹里css文件复制到主题文件夹即可，子文件夹里包含了字体。
+使用方法：打开Typora --> 文件 --> 偏好设置 --> 外观 --> 打开主题文件夹，在打开的文件夹里把下载好的KeepStyle主题压缩包解压到此文件夹，重启Typora --> 主题 --> 选择**Keepstyle** 或者 **Keepstyle Bright**，即可启用。
 
-有空就会更新
+文件目录：
 
-如需其他要求可自行修改css代码
+1. keepstyle.css（暗色主题）
+2. keepstyle_bright.css（亮色主题）
+3. AlimamaFangYuanTiVF-Thin.ttf（阿里巴巴普惠体-阿里妈妈方圆体）
 
-##### keepstyle
+后续主题更新优化或许会与图片有所差距。具体更新日志请前往[Release Typora-KeepStyle主题 · KSMLC/TyporaThemeKeepStyle (github.com)](https://github.com/KSMLC/TyporaThemeKeepStyle/releases/tag/KeepStyle)查看
 
-![](https://github.com/KSMLC/TyporaThemeKeepStyle/blob/gh-pages/media/theme/keepstyle/keepstyle.png?raw=true)
+## 在线预览
 
-##### keepstyle_ide
+[keepstyle（暗色主题）](https://demo.ksmlc.cn/TyporaThemeKeepStyle/index.html)
 
-![](https://github.com/KSMLC/TyporaThemeKeepStyle/blob/gh-pages/media/theme/keepstyle/keepstyle_ide.png?raw=true)
+[keepstyle_bright（亮色主题）](https://demo.ksmlc.cn/TyporaThemeKeepStyle/index1.html)
 
-### 下载
+## 预览图
 
-[Release Typora-KeepStyle主题 · KSMLC/TyporaThemeKeepStyle (github.com)](https://github.com/KSMLC/TyporaThemeKeepStyle/releases/tag/KeepStyle)
+<img src="https://demo.ksmlc.cn/TyporaThemeKeepStyle/image/keepstyle.png" alt="image" />
 
-### 作者
+## keepstyle（暗色主题）
 
-[KS-MLC|个人介绍-博客网站 (ksmlc.cn)](https://www.ksmlc.cn/)
+<img src="https://demo.ksmlc.cn/TyporaThemeKeepStyle/image/keepstyle_dark.png" alt="image" />
+
+## keepstyle_bright（亮色主题）
+
+<img src="https://demo.ksmlc.cn/TyporaThemeKeepStyle/image/keepstyle_bright.png" alt="image" />
+
+## 下载
+
+GitHub：[Release Typora-KeepStyle主题 · KSMLC/TyporaThemeKeepStyle (github.com)](https://github.com/KSMLC/TyporaThemeKeepStyle/releases/tag/KeepStyle)
+
+蓝奏云：https://ksmlc.lanzouw.com/b00653jmyb  密码:ksmlc
+
+## 作者
+
+[KS-MLC|个人介绍-博客网站 (ksmlc.cn)](https://ksmlc.cn/)
