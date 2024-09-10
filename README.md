@@ -1,4 +1,9 @@
 # OneLight Theme For Typora
+![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/caolib/typora-onelight-theme/total?labelColor=white&color=blue)
+![GitHub Release](https://img.shields.io/github/v/release/caolib/typora-onelight-theme?labelColor=blue&color=red)
+![GitHub last commit](https://img.shields.io/github/last-commit/caolib/typora-onelight-theme?labelColor=white&color=blue)
+
+
 ![image](https://github.com/user-attachments/assets/d56a5c27-7b81-45f9-84cb-8b91df92eba9)
 
 > [!note]
