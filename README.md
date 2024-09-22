@@ -23,3 +23,9 @@
 
 > [!tip]
 > 此仓库用于发布最新发行版，日常更新则在 [**one-light-theme**](https://github.com/caolib/one-light-theme) 进行
+
+---
+
+<div align=center>
+  <img src="https://counter.seku.su/cmoe?name=caolib&theme=r34"/>
+</div>
