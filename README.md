@@ -24,8 +24,8 @@
 
 > [!important]
 > **这里有两篇文章使用one-light主题，可点击查看主题详细效果展示**
+> - **[network](https://bin-sites.pages.dev/net/计算机网络)**
 > - **[mybatis](https://htmlpreview.github.io/?https://github.com/caolib/note/blob/master/mb.html)**
-> - **[network](https://htmlpreview.github.io/?https://github.com/caolib/note/blob/master/network.html)**
 
 ---
 
