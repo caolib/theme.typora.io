@@ -11,6 +11,14 @@
 > **使用方法**：文件 → 偏好设置 → 外观 → 打开主题文件夹 → 将下载的2个css文件都粘贴到这个目录然后重新启动typora
 > 
 > 如果要自行修改，建议修改`onelight.user.css`文件，将你自己的样式放在这个文件中
+>
+> ---
+> 
+> **默认字体修改**
+> 
+> 在`onelight.user.css`和`onelight.css`2个文件开头设置了默认字体，可以自行修改
+> ![](https://github.com/user-attachments/assets/ab75260f-cff0-43b7-b8e5-dfea38e8525c)
+
 
 ---
 
