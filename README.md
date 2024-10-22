@@ -2,11 +2,12 @@
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/caolib/typora-onelight-theme/total?labelColor=white&color=blue)
 ![GitHub Release](https://img.shields.io/github/v/release/caolib/typora-onelight-theme?labelColor=blue&color=red)
 ![GitHub last commit](https://img.shields.io/github/last-commit/caolib/typora-onelight-theme?labelColor=white&color=blue)
-
+> [!tip]
+> 此仓库用于发布发行版，日常更新则在 [**one-light-theme**](https://github.com/caolib/one-light-theme) 进行
 
 ![image](https://github.com/user-attachments/assets/d56a5c27-7b81-45f9-84cb-8b91df92eba9)
 
-> [!note]
+> [!important]
 > 一个简洁的浅色主题，**[下载地址](https://github.com/caolib/theme.typora.io/releases)**
 > **使用方法**：文件 → 偏好设置 → 外观 → 打开主题文件夹 → 将下载的2个css文件都粘贴到这个目录然后重新启动typora
 > 
@@ -22,17 +23,10 @@
 
 ---
 
-> [!important]
+> [!note]
 > **这里有两篇文章使用one-light主题，可点击查看主题详细效果展示**
 > - **[network](https://bin-sites.pages.dev/net/计算机网络)**
 > - **[mybatis](https://htmlpreview.github.io/?https://github.com/caolib/note/blob/master/mb.html)**
-
----
-
-> [!tip]
-> 此仓库用于发布最新发行版，日常更新则在 [**one-light-theme**](https://github.com/caolib/one-light-theme) 进行
-
----
 
 <div align=center>
   <img src="https://counter.seku.su/cmoe?name=caolib&theme=r34"/>
