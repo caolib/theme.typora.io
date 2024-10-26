@@ -1,10 +1,19 @@
 # OneLight Theme For Typora
+---
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/caolib/typora-onelight-theme/total?labelColor=white&color=blue)
-![GitHub Release](https://img.shields.io/github/v/release/caolib/typora-onelight-theme?labelColor=blue&color=red)
+![GitHub Release](https://img.shields.io/github/v/release/caolib/one-light-theme?labelColor=blue&color=red)
 ![GitHub last commit](https://img.shields.io/github/last-commit/caolib/typora-onelight-theme?labelColor=white&color=blue)
+---
+<!--
+![](https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v0.0.5/total)
+![](https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v0.0.6/total)
+![](https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v0.1.0/total)
+![](https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v0.2.1/total)
+![](https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v0.2.2/total)
+-->
+
 > [!tip]
 > 此仓库用于发布发行版，日常更新则在 [**one-light-theme**](https://github.com/caolib/one-light-theme) 进行
-
 ![image](https://github.com/user-attachments/assets/d56a5c27-7b81-45f9-84cb-8b91df92eba9)
 
 > [!important]
