@@ -3,7 +3,7 @@
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/caolib/typora-onelight-theme/total?labelColor=white&color=blue)
 ![GitHub Release](https://img.shields.io/github/v/release/caolib/one-light-theme?labelColor=blue&color=red)
 ![GitHub last commit](https://img.shields.io/github/last-commit/caolib/typora-onelight-theme?labelColor=white&color=blue)
-[![Static Badge](https://img.shields.io/badge/%E7%82%B9%E5%87%BB%E4%B8%8B%E8%BD%BD-white)](https://github.com/caolib/typora-onelight-theme/releases/download/v0.2.2/onelight.zip)
+[![](https://img.shields.io/badge/点击下载最新-white)](https://github.com/caolib/typora-onelight-theme/releases/latest/download/onelight.zip)
 ---
 
 
