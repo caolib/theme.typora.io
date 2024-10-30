@@ -3,7 +3,7 @@
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/caolib/typora-onelight-theme/total?labelColor=white&color=blue)
 ![GitHub Release](https://img.shields.io/github/v/release/caolib/one-light-theme?labelColor=blue&color=red)
 ![GitHub last commit](https://img.shields.io/github/last-commit/caolib/typora-onelight-theme?labelColor=white&color=blue)
-[![](https://img.shields.io/badge/点击下载最新-white)](https://github.com/caolib/typora-onelight-theme/releases/latest/download/onelight.zip)
+[⬇️![](https://img.shields.io/badge/点击下载最新-white)](https://github.com/caolib/typora-onelight-theme/releases/latest/download/onelight.zip)
 ---
 
 
@@ -28,13 +28,17 @@
 >
 > ---
 > 
-> **2.默认字体修改**
+> **2.关于字体**
 > 
 > 在`onelight.user.css`和`onelight.css`2个文件开头设置了默认字体，可以自行修改
 > ![](https://github.com/user-attachments/assets/ab75260f-cff0-43b7-b8e5-dfea38e8525c)
->
+> 
+> **因为从网络导入字体文件太慢了，有时候甚至会失败(国内网络)，如果要使用主题中的字体，建议下载字体安装**
+> 
+> [![](https://img.shields.io/badge/下载CascadiaCode-white)](https://clb-cdn.pages.dev/fonts/CascadiaCode.ttf)
+> [![](https://img.shields.io/badge/下载喵字果汁体-white)](https://clb-cdn.pages.dev/fonts/MiaoZi-GuoZhiTi.ttf)
 > ---
-> 无需克隆本仓库啦(仓库很大)，css文件都在右侧[Release](https://github.com/caolib/theme.typora.io/releases)中，最新的变化可以查看[**one-light-theme**](https://github.com/caolib/one-light-theme)仓库
+> 无需克隆本仓库啦(仓库很大)，css文件都在右侧[Release](https://github.com/caolib/theme.typora.io/releases)中，最新的变化可以查看[**one-light-theme**](https://github.com/caolib/one-light-theme)仓库，如果喜欢onelight的话不妨点颗⭐，欢迎[提问](https://github.com/caolib/typora-onelight-theme/issues)和PR哦🥰
 
 ---
 
