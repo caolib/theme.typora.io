@@ -8,11 +8,12 @@
 
 <details>
   <summary>各版本下载量</summary>
-  <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v0.2.2/total" alt="Downloads v0.2.2"/></br>
-  <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v0.2.1/total" alt="Downloads v0.2.1"/></br>
-  <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v0.1.0/total" alt="Downloads v0.1.0"/></br>
-  <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v0.0.6/total" alt="Downloads v0.0.6"/></br>
-  <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v0.0.5/total" alt="Downloads v0.0.5"/></br>
+  <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v0.2.3/total"></br> 
+  <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v0.2.2/total"/></br>
+  <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v0.2.1/total"/></br>
+  <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v0.1.0/total"/></br>
+  <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v0.0.6/total"/></br>
+  <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v0.0.5/total"/></br>
 </details>
 
 > [!tip]
