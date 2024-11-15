@@ -16,6 +16,14 @@
   <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v0.0.5/total"/></br>
 </details>
 
+> [!note]
+> **这里有两篇文章使用one-light主题，可点击查看主题详细效果展示**
+> - **[计算机网络](https://bin-sites.pages.dev/net/计算机网络)**
+> - **[mybatis-plus](https://bin-sites.pages.dev/mp)**
+
+---
+
+
 > [!tip]
 > 此仓库用于发布发行版，日常更新则在 [**one-light-theme**](https://github.com/caolib/one-light-theme) 进行
 ![image](https://github.com/user-attachments/assets/d56a5c27-7b81-45f9-84cb-8b91df92eba9)
@@ -39,13 +47,6 @@
 > [⬇️![](https://img.shields.io/badge/下载喵字果汁体-white)](https://clb-cdn.pages.dev/fonts/MiaoZi-GuoZhiTi.ttf)
 > ---
 > 无需克隆本仓库啦(这个仓库是部署官方主题网站的，没有主题的css)，css文件都在右侧[Release](https://github.com/caolib/theme.typora.io/releases)中，最新的变化可以查看[**one-light-theme**](https://github.com/caolib/one-light-theme)仓库，如果喜欢onelight的话不妨点颗⭐获取后续更新，欢迎[提问](https://github.com/caolib/typora-onelight-theme/issues)和PR👏
-
----
-
-> [!note]
-> **这里有两篇文章使用one-light主题，可点击查看主题详细效果展示**
-> - **[计算机网络](https://bin-sites.pages.dev/net/计算机网络)**
-> - **[mybatis-plus](https://bin-sites.pages.dev/mp)**
 
 <div align=center>
   <img src="https://counter.seku.su/cmoe?name=caolib&theme=r34"/>
