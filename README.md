@@ -35,10 +35,10 @@
 > 
 > **因为从网络导入字体文件太慢了，有时候甚至会失败(国内网络)，如果要使用主题中的字体，建议下载字体安装**
 > 
-> [![](https://img.shields.io/badge/下载CascadiaCode-white)](https://clb-cdn.pages.dev/fonts/CascadiaCode.ttf)
-> [![](https://img.shields.io/badge/下载喵字果汁体-white)](https://clb-cdn.pages.dev/fonts/MiaoZi-GuoZhiTi.ttf)
+> [⬇️![](https://img.shields.io/badge/下载CascadiaCode字体-white)](https://clb-cdn.pages.dev/fonts/CascadiaCode.ttf)
+> [⬇️![](https://img.shields.io/badge/下载喵字果汁体-white)](https://clb-cdn.pages.dev/fonts/MiaoZi-GuoZhiTi.ttf)
 > ---
-> 无需克隆本仓库啦(仓库很大)，css文件都在右侧[Release](https://github.com/caolib/theme.typora.io/releases)中，最新的变化可以查看[**one-light-theme**](https://github.com/caolib/one-light-theme)仓库，如果喜欢onelight的话不妨点颗⭐，欢迎[提问](https://github.com/caolib/typora-onelight-theme/issues)和PR哦🥰
+> 无需克隆本仓库啦(这个仓库是部署官方主题网站的，没有主题的css)，css文件都在右侧[Release](https://github.com/caolib/theme.typora.io/releases)中，最新的变化可以查看[**one-light-theme**](https://github.com/caolib/one-light-theme)仓库，如果喜欢onelight的话不妨点颗⭐获取后续更新，欢迎[提问](https://github.com/caolib/typora-onelight-theme/issues)和PR👏
 
 ---
 
