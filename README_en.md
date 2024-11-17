@@ -1,9 +1,9 @@
 <h1 align='center'>OneLight Theme For Typora</h1> 
 
   <p align="center">
-    <a href="./readme.md">简体中文</a>
+    <a href="./README.md">简体中文</a>
     |
-    <a href="./readme_en.md">English</a>
+    <a href="./README_en.md">English</a>
   </p>
 
 
