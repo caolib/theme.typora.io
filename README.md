@@ -26,6 +26,7 @@
 
 > [!note]
 > **这里有两篇文章使用one-light主题，可点击查看主题详细效果展示**
+> - **[markdown使用](https://bin-sites.pages.dev/markdown-doc/markdown-learn)**
 > - **[计算机网络](https://bin-sites.pages.dev/net/计算机网络)**
 > - **[mybatis-plus](https://bin-sites.pages.dev/mp)**
 
