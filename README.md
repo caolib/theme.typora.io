@@ -60,7 +60,7 @@
 > 
 > - **如果你想克隆本仓库**，为了避免克隆到其他分支，请使用
 >    ```sh
->  git clone --single-branch https://github.com/caolib/typora-onelight-theme.git   
+>    git clone --single-branch https://github.com/caolib/typora-onelight-theme.git   
 >    ```
 > - 从网络导入可以实时获取主题的最新更改，缺点是每次打开都需要加载一会才行
 > - 如果要自行修改，建议修改`onelight.user.css`文件，将你自己的样式放在这个文件中
