@@ -7,10 +7,11 @@
   </p>
 
 
-![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/caolib/typora-onelight-theme/total?labelColor=white&color=blue)
-[![GitHub Release](https://img.shields.io/github/v/release/caolib/one-light-theme?labelColor=blue&color=red)](https://github.com/caolib/typora-onelight-theme/releases)
+<img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/total?labelColor=white&color=blue" alt="GitHub Downloads (all assets, all releases)" />
+[<img src="https://img.shields.io/github/v/release/caolib/one-light-theme?labelColor=blue&color=red" alt="GitHub Release" />](https://github.com/caolib/typora-onelight-theme/releases)
 [![GitHub last commit](https://img.shields.io/github/last-commit/caolib/one-light-theme?labelColor=white&color=blue)](https://github.com/caolib/one-light-theme/activity)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/6ca72e1b-7dc6-4d51-8542-e07bf9ad0a88/deploy-status)](https://typora-theme.netlify.app)
+
 [⬇️![](https://img.shields.io/badge/点击下载最新-white)](https://github.com/caolib/typora-onelight-theme/releases/latest/download/onelight.zip)
 ---
 
@@ -27,13 +28,16 @@
 
 > [!tip]
 > **这里有两篇文章使用one-light主题，可点击查看主题详细效果展示**
+>
 > - **[markdown使用](https://bin-sites.pages.dev/markdown-doc/markdown-learn)**
 > - **[计算机网络](https://bin-sites.pages.dev/net/计算机网络)**
 > - **[mybatis-plus](https://bin-sites.pages.dev/mp)**
 
 ---
 
-![image](https://github.com/user-attachments/assets/d56a5c27-7b81-45f9-84cb-8b91df92eba9)
+![](https://s2.loli.net/2024/12/15/8owUutvPmiQxCWI.png)
+
+![image](https://s2.loli.net/2024/12/15/8yOnx3Kkj2htecp.png)
 
 **1.如何使用**
 - 下载css文件到本地（推荐）
@@ -72,6 +76,9 @@
 [⬇️![](https://img.shields.io/badge/下载CascadiaCode字体-white)](https://clb-cdn.pages.dev/fonts/CascadiaCode.ttf)
 [⬇️![](https://img.shields.io/badge/下载喵字果汁体-white)](https://clb-cdn.pages.dev/fonts/MiaoZi-GuoZhiTi.ttf)
 ---
+
+
+
 <div align=center>
   <img src="https://counter.seku.su/cmoe?name=caolib&theme=r34"/>
 </div>

@@ -451,6 +451,7 @@ mark {
 /* 选中文本 */
 .CodeMirror-selected,
 .CodeMirror-selectedtext {
+  background: rgba(255, 128, 128, 0.1) !important;
   text-shadow: none;
   color: inherit !important;
 }

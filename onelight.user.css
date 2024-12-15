@@ -125,44 +125,6 @@ table tr:hover {
   background-color: var(--code--bg-color-light);
 }
 
-/* 小标签 */
-font {
-  display: inline;
-  padding: 0.2em 0.6em;
-  font-size: 90%;
-  font-weight: 400;
-  line-height: 1;
-  color: #fff;
-  text-align: center;
-  /*white-space: nowrap;*/
-  vertical-align: baseline;
-  border-radius: 0.1rem;
-  border-radius: 6px;
-  background-color: var(--main-blue);
-}
-
-font[title="red"] {
-  background-color: #e91e64;
-}
-
-font[title="blue"] {
-  background-color: #02aaf4;
-}
-
-font[title="yellow"] {
-  background-color: #ffc50a;
-}
-
-font[title="green"] {
-  background-color: #8bc34a;
-}
-
-font[title="gray"] {
-  background-color: #4c4c4c;
-}
-
-
-
 /* 分割线 */
 hr {
   height: 2px;
@@ -180,6 +142,7 @@ kbd {
 p.md-toc-content {
   background: #ffffff;
   border-radius: 10px;
+  box-shadow: var(--box-shadow);
 }
 
 
@@ -321,8 +284,14 @@ video {
 
 /* 表格阴影和圆角 */
 figure.md-table-fig.table-figure {
-  box-shadow: 5px 6px 9px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
   border-radius: 5px;
+}
+
+figure.md-table-fig.table-figure:hover {
+  box-shadow: var(--box-shadow);
+  transform: scale(1.01);
 }
 
 /* 左侧栏大纲搜索高亮 */
@@ -447,14 +416,16 @@ span[alt="highlight"] {
   background: rgba(0, 0, 0, 0.1);
 }
 
-/* 背景图片 */
+/* 背景 */
 content {
-  background-image: url('./bg.png');
+  background-size: 100px auto;
+  background-image: url('./bg.gif');
   background-color: transparent;
   background-position: right bottom;
-  background-size: contain;
   background-repeat: no-repeat;
 }
+
+
 
 /* -----------------------------源代码阅读模式 样式 ---------------------- */
 /* 字体 */
