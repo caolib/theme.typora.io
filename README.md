@@ -5,11 +5,11 @@
     |
     <a href="./README_en.md">English</a>
   </p>
+
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/caolib/typora-onelight-theme/total?labelColor=white&color=blue)
 [![GitHub Release](https://img.shields.io/github/v/release/caolib/one-light-theme?labelColor=blue&color=red)](https://github.com/caolib/typora-onelight-theme/releases)
 [![GitHub last commit](https://img.shields.io/github/last-commit/caolib/one-light-theme?labelColor=white&color=blue)](https://github.com/caolib/one-light-theme/activity)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/6ca72e1b-7dc6-4d51-8542-e07bf9ad0a88/deploy-status)](https://typora-theme.netlify.app)
-
 [⬇️![](https://img.shields.io/badge/点击下载最新-white)](https://github.com/caolib/typora-onelight-theme/releases/latest/download/onelight.zip)
 ---
 
@@ -27,9 +27,8 @@
 > [!tip]
 > **这里有两篇文章使用one-light主题，可点击查看主题详细效果展示**
 >
-> - **[markdown使用](https://bin-sites.pages.dev/markdown-doc/markdown-learn)**
+> - **[onelight](https://bin-sites.pages.dev/onelight)**
 > - **[计算机网络](https://bin-sites.pages.dev/net/计算机网络)**
-> - **[mybatis-plus](https://bin-sites.pages.dev/mp)**
 
 ---
 
