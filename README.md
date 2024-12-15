@@ -5,9 +5,8 @@
     |
     <a href="./README_en.md">English</a>
   </p>
-
-<img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/total?labelColor=white&color=blue" alt="GitHub Downloads (all assets, all releases)" />
-[<img src="https://img.shields.io/github/v/release/caolib/one-light-theme?labelColor=blue&color=red" alt="GitHub Release" />](https://github.com/caolib/typora-onelight-theme/releases)
+![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/caolib/typora-onelight-theme/total?labelColor=white&color=blue)
+[![GitHub Release](https://img.shields.io/github/v/release/caolib/one-light-theme?labelColor=blue&color=red)](https://github.com/caolib/typora-onelight-theme/releases)
 [![GitHub last commit](https://img.shields.io/github/last-commit/caolib/one-light-theme?labelColor=white&color=blue)](https://github.com/caolib/one-light-theme/activity)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/6ca72e1b-7dc6-4d51-8542-e07bf9ad0a88/deploy-status)](https://typora-theme.netlify.app)
 
