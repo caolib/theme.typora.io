@@ -6,7 +6,6 @@
     <a href="./README_en.md">English</a>
   </p>
 
-
 <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/total?labelColor=white&color=blue" alt="GitHub Downloads (all assets, all releases)" />
 [<img src="https://img.shields.io/github/v/release/caolib/one-light-theme?labelColor=blue&color=red" alt="GitHub Release" />](https://github.com/caolib/typora-onelight-theme/releases)
 [![GitHub last commit](https://img.shields.io/github/last-commit/caolib/one-light-theme?labelColor=white&color=blue)](https://github.com/caolib/one-light-theme/activity)
@@ -17,8 +16,8 @@
 
 <details>
   <summary>各版本下载量</summary>
-  <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v0.2.4/total"></br> 
-  <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v0.2.3/total"></br> 
+  <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v0.2.4/total"></br>
+  <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v0.2.3/total"></br>
   <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v0.2.2/total"/></br>
   <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v0.2.1/total"/></br>
   <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v0.1.0/total"/></br>
@@ -40,6 +39,7 @@
 ![image](https://s2.loli.net/2024/12/15/8yOnx3Kkj2htecp.png)
 
 **1.如何使用**
+
 - 下载css文件到本地（推荐）
   - 下载css文件
   - 在typora中选择 文件 → 偏好设置 → 外观 → 打开主题文件夹
@@ -75,6 +75,16 @@
 
 [⬇️![](https://img.shields.io/badge/下载CascadiaCode字体-white)](https://clb-cdn.pages.dev/fonts/CascadiaCode.ttf)
 [⬇️![](https://img.shields.io/badge/下载喵字果汁体-white)](https://clb-cdn.pages.dev/fonts/MiaoZi-GuoZhiTi.ttf)
+---
+
+**3.关于背景图片**
+
+> [!tip]
+>
+> 只要将背景图片放在css文件同一个文件夹就可以显示了，文件名为`bg.gif`,你可以在`onelight.user.css`中搜索这个文件名并替换成任何你想显示的其他图片
+
+
+
 ---
 
 
