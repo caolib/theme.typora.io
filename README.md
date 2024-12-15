@@ -81,6 +81,8 @@
 > [!tip]
 >
 > 只要将背景图片放在css文件同一个文件夹就可以显示了，文件名为`bg.gif`,你可以在`onelight.user.css`中搜索这个文件名并替换成任何你想显示的其他图片
+>
+> <img src="https://s2.loli.net/2024/12/15/Fn6LcrKWC2dlp1J.gif" alt="recording" style="zoom: 50%;" />
 
 
 
