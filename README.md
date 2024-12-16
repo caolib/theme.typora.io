@@ -30,6 +30,16 @@
 > - **[onelight](https://bin-sites.pages.dev/onelight)**
 > - **[计算机网络](https://bin-sites.pages.dev/net/计算机网络)**
 
+> [!caution]
+>
+> **如果你想克隆本仓库，为了避免克隆到其他分支，请使用这条命令：**
+>
+> ```sh
+> git clone --single-branch https://github.com/caolib/typora-onelight-theme.git
+> ```
+>
+> 这样只会克隆主分支
+
 ---
 
 ![](https://s2.loli.net/2024/12/15/8owUutvPmiQxCWI.png)
@@ -57,12 +67,6 @@
   - 重启typora切换主题
 
 > [!caution]
->
-> - **如果你想克隆本仓库**，为了避免克隆到其他分支，请使用
->
->    ```shell
->    git clone --single-branch https://github.com/caolib/typora-onelight-theme.git 
->    ```
 >
 > - 从网络导入可以实时获取主题的最新更改，缺点是每次打开都需要加载一会才行
 >
