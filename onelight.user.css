@@ -427,6 +427,11 @@ content {
 }
 
 
+.in-text-selection,
+::selection {
+  background: var(--item-bg-color-blue);
+}
+
 
 /* -----------------------------源代码阅读模式 样式 ---------------------- */
 /* 字体 */
