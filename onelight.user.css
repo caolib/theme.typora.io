@@ -423,6 +423,7 @@ content {
   background-color: transparent;
   background-position: right bottom;
   background-repeat: no-repeat;
+  transition: background-image 0.5s ease-in-out, background-size 0.5s ease-in-out;
 }
 
 
