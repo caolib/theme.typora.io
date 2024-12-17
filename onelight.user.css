@@ -432,6 +432,32 @@ content {
   background: var(--item-bg-color-blue);
 }
 
+/* 不显示代码块的竖线 */
+.CodeMirror-gutters {
+  border-right: unset;
+}
+
+/* 一体化模式的菜单项 */
+.megamenu-menu {
+  color: black;
+  background: rgb(173 173 173 / 30%);
+  backdrop-filter: blur(10px);
+}
+
+.megamenu-menu-header {
+  background: rgb(110 110 110 / 30%);
+  backdrop-filter: blur(10px);
+  height: 90px;
+  position: relative;
+  text-align: center;
+  border-bottom: unset;
+}
+
+/* 返回按钮显示文本 */
+.ion-android-arrow-back:before {
+  font-family: cascadia code, fira code, var(--main-font-family);
+  content: "<-";
+}
 
 /* -----------------------------源代码阅读模式 样式 ---------------------- */
 /* 字体 */
