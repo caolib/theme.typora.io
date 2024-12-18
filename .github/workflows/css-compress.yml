@@ -1,0 +1,44 @@
+name: Compress CSS Files
+
+on:
+  push:
+    branches:
+      - onelight  # 监听的分支，可以改成你的目标分支
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    # 1. 检出代码
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    # 2. 设置 Node.js 环境（安装依赖）
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 18  # 使用 Node.js 版本，可根据需要调整
+
+    # 3. 安装 clean-css-cli
+    - name: Install clean-css-cli
+      run: |
+        npm install -g clean-css-cli
+
+    # 4. 压缩 CSS 文件并保存到 dist 文件夹
+    - name: Compress CSS files
+      run: |
+        mkdir -p dist
+        cleancss -o ./dist/onelight.user.min.css ./onelight.user.css
+        cleancss -o ./dist/onelight.min.css ./onelight.css
+
+    # 5. 推送压缩后的文件到仓库
+    - name: Commit and push compressed files
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git add dist/
+        git commit -m "Add compressed CSS files"
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
