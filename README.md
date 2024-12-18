@@ -3,7 +3,7 @@
   <p align="center">
     <a>简体中文</a>
     |
-    <a href="./README_en.md">English</a>
+    <a href="./docs/README_en.md">English</a>
   </p>
 
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/caolib/typora-onelight-theme/total?labelColor=white&color=blue)
@@ -95,11 +95,7 @@
 >
 > <img src="https://s2.loli.net/2024/12/15/Fn6LcrKWC2dlp1J.gif" alt="recording" style="zoom: 50%;" />
 
-
-
 ---
-
-
 
 <div align=center>
   <img src="https://counter.seku.su/cmoe?name=caolib&theme=r34"/>

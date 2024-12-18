@@ -459,6 +459,15 @@ content {
   content: "<-";
 }
 
+footer.ty-footer {
+  border-top: 0;
+}
+
+/* mermaid */
+pre.md-fences-advanced.md-focus .md-fences-adv-panel {
+  border: 0;
+}
+
 /* -----------------------------源代码阅读模式 样式 ---------------------- */
 /* 字体 */
 #typora-source .CodeMirror-lines {
