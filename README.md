@@ -1,10 +1,11 @@
 <h1 align='center'>OneLight Theme For Typora</h1>
 
-  <p align="center">
+ <!-- <p align="center">
     <a>简体中文</a>
     |
     <a href="./docs/README_en.md">English</a>
   </p>
+-->
 
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/caolib/typora-onelight-theme/total?labelColor=white&color=blue)
 [![GitHub Release](https://img.shields.io/github/v/release/caolib/one-light-theme?labelColor=blue&color=red)](https://github.com/caolib/typora-onelight-theme/releases)
