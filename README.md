@@ -61,8 +61,8 @@
   - 加入这两行
 
     ```css
-    @import url('https://cdn.jsdelivr.net/gh/caolib/one-light-theme@main/onelight.css');
-    @import url('https://cdn.jsdelivr.net/gh/caolib/one-light-theme@main/onelight.user.css');
+    @import url('https://cdn.jsdelivr.net/gh/caolib/typora-onelight-theme@onelight/dist/onelight.min.css');
+    @import url('https://cdn.jsdelivr.net/gh/caolib/typora-onelight-theme@onelight/dist/onelight.user.min.css');
     ```
 
   - 重启typora切换主题
