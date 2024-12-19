@@ -419,7 +419,7 @@ span[alt="highlight"] {
 /* 背景 */
 content {
   background-size: 100px auto;
-  background-image: url('./bg.gif');
+  background-image: url('./img/bg.gif');
   background-color: transparent;
   background-position: right bottom;
   background-repeat: no-repeat;
@@ -445,7 +445,7 @@ content {
 }
 
 .megamenu-menu-header {
-  background: rgb(110 110 110 / 30%);
+  background: #2E2E2E;
   backdrop-filter: blur(10px);
   height: 90px;
   position: relative;
@@ -456,8 +456,20 @@ content {
 /* 返回按钮显示文本 */
 .ion-android-arrow-back:before {
   font-family: cascadia code, fira code, var(--main-font-family);
+  /* content: "←"; */
   content: "<-";
 }
+
+a#megamenu-back-btn:hover {
+  color: var(--main-blue);
+}
+
+/* 返回按钮 */
+#megamenu-back-btn {
+  border: 0px;
+  font-size: 25px;
+}
+
 
 footer.ty-footer {
   border-top: 0;
