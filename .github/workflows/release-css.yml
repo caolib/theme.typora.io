@@ -1,0 +1,56 @@
+name: 发布新版本
+on:
+  push:
+    tags:
+      - '*'  # 监听所有标签的推送
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: 删除并重新创建dist文件夹
+      run: |
+        rm -rf dist
+        mkdir dist
+    - name: 获取当前的标签名
+      id: get_tag_name
+      run: |
+        TAG_NAME=${GITHUB_REF##*/}  # 获取标签名，去掉 refs/tags/
+        echo "TAG_NAME=${TAG_NAME}" >> $GITHUB_ENV  # 将标签名存储在环境变量中
+
+    - name: 打包onelight.css和onelight文件夹到dist
+      run: |
+        TAG_NAME=${GITHUB_REF##*/}  # 获取标签名
+        zip -r dist/onelight-${{ env.TAG_NAME }}.zip ./onelight.css ./onelight
+
+    - name: 获取最近版本的提交信息
+      run: |
+        git log -20 --pretty=format:"* %s" --grep="^[✨🎉📃🎨🔨🔧🐞🧪🎈🔧🐎🐳🌈↩]" > release_notes.txt
+
+    - name: 读取发布消息内容
+      id: release_notes
+      run: |
+        echo "::set-output name=notes::$(cat release_notes.txt)"
+
+    - name: 创建发布
+      id: release
+      uses: actions/create-release@v1
+      with:
+        tag_name: ${{ github.ref }}
+        release_name: Release ${{ github.ref }}
+        body: ${{ steps.release_notes.outputs.notes }} 
+      env:
+        GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+        
+    - name: 上传发布文件
+      uses: actions/upload-release-asset@v1
+      with:
+        upload_url: ${{ steps.release.outputs.upload_url }}
+        asset_path: dist/onelight-${{ env.TAG_NAME }}.zip
+        asset_name: onelight-${{ env.TAG_NAME }}.zip
+        asset_content_type: application/zip
+      env:
+        GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
