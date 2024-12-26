@@ -1,17 +1,11 @@
 <h1 align='center'>OneLight Theme For Typora</h1>
 
- <!-- <p align="center">
-    <a>简体中文</a>
-    |
-    <a href="./docs/README_en.md">English</a>
-  </p>
--->
-
-![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/caolib/typora-onelight-theme/total?labelColor=white&color=blue)
-[![GitHub Release](https://img.shields.io/github/v/release/caolib/one-light-theme?labelColor=blue&color=red)](https://github.com/caolib/typora-onelight-theme/releases)
-[![GitHub last commit](https://img.shields.io/github/last-commit/caolib/one-light-theme?labelColor=white&color=blue)](https://github.com/caolib/one-light-theme/activity)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/6ca72e1b-7dc6-4d51-8542-e07bf9ad0a88/deploy-status)](https://typora-theme.netlify.app)
+![](https://img.shields.io/github/downloads/caolib/typora-onelight-theme/total?labelColor=white&color=blue)
+[![](https://img.shields.io/github/v/release/caolib/one-light-theme?labelColor=blue&color=red)](https://github.com/caolib/typora-onelight-theme/releases)
+[![](https://img.shields.io/github/last-commit/caolib/one-light-theme?labelColor=white&color=blue)](https://github.com/caolib/typora-onelight-theme/activity)
+[![](https://api.netlify.com/api/v1/badges/6ca72e1b-7dc6-4d51-8542-e07bf9ad0a88/deploy-status)](https://typora-theme.netlify.app)
 [⬇️![](https://img.shields.io/badge/点击下载最新-white)](https://github.com/caolib/typora-onelight-theme/releases/latest/download/onelight.zip)
+
 ---
 
 <details>
@@ -31,6 +25,18 @@
 > - **[onelight](https://bin-sites.pages.dev/onelight)**
 > - **[计算机网络](https://bin-sites.pages.dev/net/计算机网络)**
 
+---
+
+![](https://s2.loli.net/2024/12/15/8owUutvPmiQxCWI.png)
+
+![image](https://s2.loli.net/2024/12/15/8yOnx3Kkj2htecp.png)
+
+**1.如何使用**
+
+- 下载压缩包[onelight.zip](https://github.com/caolib/typora-onelight-theme/releases/latest/download/onelight.zip)
+- 在typora中选择 文件 → 偏好设置 → 外观 → 打开主题文件夹
+- 将下载的zip解压，将**css文件**和**文件夹**粘贴到typora的主题文件夹中
+
 > [!caution]
 >
 > **如果你想克隆本仓库，为了避免克隆到其他分支，请使用这条命令：**
@@ -43,61 +49,40 @@
 
 ---
 
-![](https://s2.loli.net/2024/12/15/8owUutvPmiQxCWI.png)
-
-![image](https://s2.loli.net/2024/12/15/8yOnx3Kkj2htecp.png)
-
-**1.如何使用**
-
-- 下载css文件到本地（推荐）
-  - 下载css文件
-  - 在typora中选择 文件 → 偏好设置 → 外观 → 打开主题文件夹
-  - 将下载的2个css文件都粘贴到这个目录然后重新启动typora，点击主题就能切换了
-
-- 你也可以选择从网络导入
-
-  - 在typora主题文件夹下创建一个css文件（名字随意，比如onelight.css）
-
-  - 加入这两行
-
-    ```css
-    @import url('https://cdn.jsdelivr.net/gh/caolib/typora-onelight-theme@onelight/dist/onelight.min.css');
-    @import url('https://cdn.jsdelivr.net/gh/caolib/typora-onelight-theme@onelight/dist/onelight.user.min.css');
-    ```
-
-  - 重启typora切换主题
-
-> [!caution]
->
-> - 从网络导入可以实时获取主题的最新更改，缺点是每次打开都需要加载一会才行
->
-> - 如果要自行修改，建议修改`onelight.user.css`文件，将你自己的样式放在这个文件中
->
-> - 如果想获取最新可以clone本仓库使用git更新或者从网络导入，主题的css文件都在右侧[Release](https://github.com/caolib/theme.typora.io/releases)中，如果喜欢onelight的话不妨点颗⭐获取后续更新，欢迎[提问](https://github.com/caolib/typora-onelight-theme/issues)和PR👏
-
----
-
 **2.关于字体**
 
-在`onelight.user.css`和`onelight.css`2个文件开头设置了默认字体，可以自行修改
+在`onelight.css`文件开头设置了默认字体，可以自行修改
 ![](https://github.com/user-attachments/assets/ab75260f-cff0-43b7-b8e5-dfea38e8525c)
 
-**因为从网络导入字体文件太慢了，有时候甚至会失败(国内网络)，如果要使用主题中的字体，建议下载字体安装**
-
-[⬇️![](https://img.shields.io/badge/下载CascadiaCode字体-white)](https://clb-cdn.pages.dev/fonts/CascadiaCode.ttf)
-[⬇️![](https://img.shields.io/badge/下载喵字果汁体-white)](https://clb-cdn.pages.dev/fonts/MiaoZi-GuoZhiTi.ttf)
----
+> **如果要使用主题中的字体，建议下载字体安装**,中文字体是[喵字果汁体](https://clb-cdn.pages.dev/fonts/MiaoZi-GuoZhiTi.ttf)，英文字体是Cascadia Code
 
 **3.关于背景图片**
 
 > [!tip]
 >
-> 只要将背景图片放在css文件同一个文件夹就可以显示了，文件名为`bg.gif`,你可以在`onelight.user.css`中搜索这个文件名并替换成任何你想显示的其他图片
+> 背景图片在`onelight/img`文件夹下，默认是bg.gif，可以自行替换,你也可以在css文件中搜索并替换文件
+>
+> ```css
+> content {
+>      background-color: transparent;
+>      background-image: url('./onelight/img/bg.gif');
+>      background-position: 100% 100%;
+>      background-repeat: no-repeat;
+>      background-size: 100px auto;
+>      transition: background-image .5s ease-in-out, background-size .5s ease-in-out
+> }
+> ```
 >
 > <img src="https://s2.loli.net/2024/12/15/Fn6LcrKWC2dlp1J.gif" alt="recording" style="zoom: 50%;" />
 
----
-
-<div align=center>
-  <img src="https://counter.seku.su/cmoe?name=caolib&theme=r34"/>
-</div>
+```css
+content {
+ background-color: transparent;
+ //可以替换此处的图片，不想显示可以将这段整个注释掉
+ background-image: url('./onelight/img/bg.gif');
+ background-position: 100% 100%;
+ background-repeat: no-repeat;
+ background-size: 100px auto;
+ transition: background-image .5s ease-in-out, background-size .5s ease-in-out
+}
+```
