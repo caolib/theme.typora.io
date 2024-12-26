@@ -1,0 +1,46 @@
+name: 发布新版本
+
+on:
+  push:
+    tags:
+      - '*'  # 监听所有标签的推送
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: 删除并重新创建dist文件夹
+      run: |
+        rm -rf dist
+        mkdir dist
+
+    - name: 打包onelight.css和文件夹
+      run: |
+        zip -r dist/onelight.zip ./onelight.css ./onelight
+
+    - name: 获取最近版本的提交信息
+      run: |
+        git log -1 --pretty=format:"* %s" > release_notes.txt
+
+    - name: 创建发布
+      id: release
+      uses: actions/create-release@v1
+      with:
+        tag_name: ${{ github.ref }}
+        release_name: Release ${{ github.ref }}
+        body: |
+          $(cat release_notes.txt)
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: 上传发布文件
+      uses: actions/upload-release-asset@v1
+      with:
+        upload_url: ${{ steps.release.outputs.upload_url }}
+        asset_path: dist/onelight.zip
+        asset_name: onelight.zip
+        asset_content_type: application/zip
