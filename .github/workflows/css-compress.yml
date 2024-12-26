@@ -1,42 +1,41 @@
-name: 压缩 CSS 文件
+name: CSS 压缩打包发布
 
 on:
   push:
     branches:
-      - onelight  # 监听的分支，可以改成你的目标分支
+      - onelight
+
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: 检出代码
-      uses: actions/checkout@v3
+      - name: 检出代码
+        uses: actions/checkout@v3
 
-    - name: 设置 Node.js 环境（安装依赖）
-      uses: actions/setup-node@v3
-      with:
-        node-version: 18 
+      - name: 设置 Node.js 环境（安装依赖）
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18 
 
-    - name: 安装 clean-css-cli
-      run: |
-        npm install -g clean-css-cli
+      - name: 安装 clean-css-cli
+        run: |
+          npm install -g clean-css-cli
 
-    - name: 压缩 CSS 文件并保存到 dist 文件夹
-      run: |
-        mkdir -p dist
-        cleancss -o ./dist/onelight.user.min.css ./onelight.user.css
-        cleancss -o ./dist/onelight.min.css ./onelight.css
+      - name: 压缩 CSS 文件
+        run: |
+          cleancss -o ./dist/onelight.min.css ./onelight.css
 
-    - name: 推送压缩后的文件到仓库
-      run: |
-        git config --global user.name "github-actions[bot]"
-        git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        git add dist/
-        if git diff-index --quiet HEAD --; then
-          echo "No changes to commit"
-          exit 0
-        fi
-        git commit -m "Add compressed CSS files"
-        git push
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: 推送压缩后的文件到仓库
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add ./dist/*
+          if git diff-index --quiet HEAD --; then
+            echo "没有任何提交"
+            exit 0
+          fi
+          git commit -m "压缩打包css文件"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

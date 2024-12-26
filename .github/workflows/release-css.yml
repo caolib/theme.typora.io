@@ -1,0 +1,61 @@
+name: Release CSS
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '18'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Clean dist directory
+      run: rm -rf dist && mkdir dist
+
+    - name: Copy CSS file to dist
+      run: cp onelight.css dist/
+
+    - name: Create ZIP file
+      run: zip -r dist/onelight.zip dist/onelight.css
+
+    - name: Get the latest tag
+      id: get_tag
+      run: echo "::set-output name=tag::$(git describe --tags --abbrev=0)"
+
+    - name: Get release notes
+      id: release_notes
+      run: echo "::set-output name=notes::$(git log -1 --pretty=format:%s)"
+
+    - name: Create GitHub Release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ steps.get_tag.outputs.tag }}
+        release_name: Release ${{ steps.get_tag.outputs.tag }}
+        body: ${{ steps.release_notes.outputs.notes }}
+        draft: false
+        prerelease: false
+
+    - name: Upload Release Asset
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: dist/onelight.zip
+        asset_name: onelight.zip
+        asset_content_type: application/zip

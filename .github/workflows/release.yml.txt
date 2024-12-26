@@ -1,0 +1,53 @@
+name: 发布新版本
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v3
+
+      - name: 获取标签信息
+        id: get_tag
+        run: |
+          TAG_NAME=$(git describe --tags --exact-match)
+          echo "tag_name=${TAG_NAME}" >> $GITHUB_ENV
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: 并重新打包onelight.zip
+        run: |
+            rm -f ./dist/onelight.zip   # 删除旧文件
+            mkdir -p ./dist             # 确保 dist 目录存在
+            zip -r ./dist/onelight.zip ./onelight.css ./onelight  # 打包文件
+        
+
+      - name: 生成发布版本内容
+        id: generate_release_notes
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const { data: latestRelease } = await github.rest.repos.getLatestRelease({
+              owner: context.repo.owner,
+              repo: context.repo.repo
+            });
+            const releaseNotes = `## 更新内容\n\n- 压缩和打包 CSS 文件\n- 自动发布新版本`;
+            return {
+              releaseNotes
+            };
+
+      - name: 发布到 GitHub Releases
+        if: steps.get_tag.outputs.tag_name != ''  # 只有标签存在时才执行发布
+        uses: softprops/action-gh-release@v1
+        with:
+          files: ./dist/onelight.zip
+          tag_name: ${{ env.tag_name }}
+          name: ${{ env.tag_name }}
+          body: ${{ steps.generate_release_notes.outputs.releaseNotes }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
