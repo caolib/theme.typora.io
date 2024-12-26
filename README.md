@@ -4,12 +4,13 @@
 [![](https://img.shields.io/github/v/release/caolib/one-light-theme?labelColor=blue&color=red)](https://github.com/caolib/typora-onelight-theme/releases)
 [![](https://img.shields.io/github/last-commit/caolib/one-light-theme?labelColor=white&color=blue)](https://github.com/caolib/typora-onelight-theme/activity)
 [![](https://api.netlify.com/api/v1/badges/6ca72e1b-7dc6-4d51-8542-e07bf9ad0a88/deploy-status)](https://typora-theme.netlify.app)
-[⬇️![](https://img.shields.io/badge/点击下载最新-white)](https://github.com/caolib/typora-onelight-theme/releases/latest/download/onelight.zip)
+[![发布新版本](https://github.com/caolib/typora-onelight-theme/actions/workflows/release-css.yml/badge.svg?branch=onelight)](https://github.com/caolib/typora-onelight-theme/actions/workflows/release-css.yml)
 
 ---
 
 <details>
   <summary>各版本下载量</summary>
+  <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v1.1.0/total"></br>
   <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v0.2.4/total"></br>
   <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v0.2.3/total"></br>
   <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v0.2.2/total"/></br>
@@ -31,32 +32,36 @@
 
 ![image](https://s2.loli.net/2024/12/15/8yOnx3Kkj2htecp.png)
 
-**1.如何使用**
+## **1.如何使用**
 
-- 下载压缩包[onelight.zip](https://github.com/caolib/typora-onelight-theme/releases/latest/download/onelight.zip)
+- 下载[主题文件](https://github.com/caolib/typora-onelight-theme/releases)
 - 在typora中选择 文件 → 偏好设置 → 外观 → 打开主题文件夹
 - 将下载的zip解压，将**css文件**和**文件夹**粘贴到typora的主题文件夹中
 
 > [!caution]
 >
-> **如果你想克隆本仓库，为了避免克隆到其他分支，请使用这条命令：**
+> - **如果你想克隆本仓库，为了避免克隆到其他分支，请使用下面这条命令,这样只会克隆主分支**
 >
-> ```sh
-> git clone --single-branch https://github.com/caolib/typora-onelight-theme.git
-> ```
+>   ```shell
+>   git clone --single-branch https://github.com/caolib/typora-onelight-theme.git
+>   ```
 >
-> 这样只会克隆主分支
+> - 如果你想从网络导入
+>
+>   ```css
+>   @import url("https://cdn.jsdelivr.net/gh/caolib/typora-onelight-theme@onelight/dist/onelight.min.css");
+>   ```
 
 ---
 
-**2.关于字体**
+## **2.关于字体**
 
 在`onelight.css`文件开头设置了默认字体，可以自行修改
 ![](https://github.com/user-attachments/assets/ab75260f-cff0-43b7-b8e5-dfea38e8525c)
 
 > **如果要使用主题中的字体，建议下载字体安装**,中文字体是[喵字果汁体](https://clb-cdn.pages.dev/fonts/MiaoZi-GuoZhiTi.ttf)，英文字体是Cascadia Code
 
-**3.关于背景图片**
+## **3.关于背景图片**
 
 > [!tip]
 >
