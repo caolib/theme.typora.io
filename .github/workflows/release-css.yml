@@ -28,7 +28,7 @@ jobs:
 
     - name: 获取最近版本的提交信息
       run: |
-        git log -20 --pretty=format:"- %s" --grep="^[✨🎉📃🎨🔨🔧🐞🧪🎈🔧🐎🐳🌈↩]" > release_notes.txt
+        git log -20 --pretty=format:"- %s" > release_notes.txt
 
     - name: 读取发布消息内容
       id: release_notes

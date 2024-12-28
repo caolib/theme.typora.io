@@ -28,9 +28,9 @@
 
 ---
 
-![](https://s2.loli.net/2024/12/15/8owUutvPmiQxCWI.png)
+![](https://s2.loli.net/2024/12/29/4zq9VbuAKvkFhYo.png)
 
-![image](https://s2.loli.net/2024/12/15/8yOnx3Kkj2htecp.png)
+![image-20241229005801957](https://s2.loli.net/2024/12/29/mHh5nuwyVWvpoGI.png)
 
 ## **1.如何使用**
 
@@ -69,25 +69,15 @@
 >
 > ```css
 > content {
->      background-color: transparent;
->      background-image: url('./onelight/img/bg.gif');
->      background-position: 100% 100%;
->      background-repeat: no-repeat;
->      background-size: 100px auto;
->      transition: background-image .5s ease-in-out, background-size .5s ease-in-out
+>     background-color: transparent;
+>     //可以替换此处的图片，不想显示可以将这段整个注释掉
+>     background-image: url('./onelight/img/bg.gif');
+>     background-position: 100% 100%;
+>     background-repeat: no-repeat;
+>     background-size: 100px auto; // 调整大小
+>     transition: background-image .5s ease-in-out, background-size .5s ease-in-out
 > }
 > ```
 >
 > <img src="https://s2.loli.net/2024/12/15/Fn6LcrKWC2dlp1J.gif" alt="recording" style="zoom: 50%;" />
 
-```css
-content {
- background-color: transparent;
- //可以替换此处的图片，不想显示可以将这段整个注释掉
- background-image: url('./onelight/img/bg.gif');
- background-position: 100% 100%;
- background-repeat: no-repeat;
- background-size: 100px auto;
- transition: background-image .5s ease-in-out, background-size .5s ease-in-out
-}
-```

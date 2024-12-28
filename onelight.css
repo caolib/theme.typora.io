@@ -206,7 +206,7 @@ body {
 }
 
 #write code {
-    background-color: #f0f0f0;
+    background-color: #ebebeb;
     color: #eb4c37;
     font-family: var(--main-font-family);
     font-size: 14px
@@ -807,9 +807,10 @@ content {
     background-image: url('./onelight/img/bg.gif');
     background-position: 100% 100%;
     background-repeat: no-repeat;
-    background-size: 100px auto;
+    background-size: 200px auto;
     transition: background-image .5s ease-in-out, background-size .5s ease-in-out
 }
+
 
 ::-moz-selection {
     background: var(--item-bg-color-blue)
@@ -874,7 +875,7 @@ pre.md-fences-advanced.md-focus .md-fences-adv-panel {
 }
 
 .cm-s-inner .cm-tag {
-    color: var(--main-blue)
+    color: #dd69f4;
 }
 
 .cm-s-typora-default .cm-overlay {
