@@ -21,6 +21,9 @@ jobs:
         run: |
           CURRENT_TAG=${GITHUB_REF##*/}  # 获取当前标签名，去掉 refs/tags/
           PREVIOUS_TAG=$(git tag --sort=-v:refname | grep -B 1 ${CURRENT_TAG} | head -n 1)
+          if [ -z "$PREVIOUS_TAG" ]; then
+            PREVIOUS_TAG=$(git tag --sort=-v:refname | head -n 2 | tail -n 1)
+          fi
           echo "CURRENT_TAG=${CURRENT_TAG}" >> $GITHUB_ENV  # 将当前标签名存储在环境变量中
           echo "PREVIOUS_TAG=${PREVIOUS_TAG}" >> $GITHUB_ENV  # 将上一个标签名存储在环境变量中
   
