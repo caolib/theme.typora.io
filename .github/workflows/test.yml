@@ -8,7 +8,8 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
-
+      with:
+        fetch-depth: 10
 
     - name: 获取最近版本的提交信息
       run: |
@@ -24,7 +25,7 @@ jobs:
       run: |
         echo "Release Notes:"
         echo "${{ env.notes }}"
-        
+
 
     # - name: 创建发布
     #   id: release
