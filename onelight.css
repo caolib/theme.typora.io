@@ -41,6 +41,8 @@
     --caution-border: solid 0.5px #cf222e94;
     --important-color: #8250df;
     --important-border: solid 0.5px #8250df94;
+    /* 放大 */
+    --transform: scale(1.005);
 }
 
 body {
@@ -92,36 +94,36 @@ body {
     padding: 0
 }
 
-#write h2:before {
+#write h2:hover:before {
     bottom: .2rem;
     content: "H2"
 }
 
-#write h3:before {
+#write h3:hover:before {
     bottom: .2rem;
     content: "H3"
 }
 
-#write h4:before {
+#write h4:hover:before {
     bottom: .2rem;
     content: "H4"
 }
 
-#write h5:before {
+#write h5:hover:before {
     bottom: .2rem;
     content: "H5"
 }
 
-#write h6:before {
+#write h6:hover:before {
     bottom: .2rem;
     content: "H6"
 }
 
-#write h2:before,
-#write h3:before,
-#write h4:before,
-#write h5:before,
-#write h6:before {
+#write h2:hover:before,
+#write h3:hover:before,
+#write h4:hover:before,
+#write h5:hover:before,
+#write h6:hover:before {
     border-radius: 0;
     bottom: 0;
     color: #166ff36e;
@@ -134,7 +136,7 @@ body {
     padding: 0;
     position: absolute;
     right: calc(100% + 10px);
-    vertical-align: baseline
+    vertical-align: baseline;
 }
 
 #write h2 {
@@ -192,7 +194,7 @@ body {
 
 #write blockquote {
     background: var(--gradient-color);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
     border-bottom-right-radius: 10px;
     border-left: 5px solid var(--main-blue);
     border-top-right-radius: 10px;
@@ -208,9 +210,10 @@ body {
 }
 
 #write blockquote:hover {
+    backdrop-filter: unset;
     background: #fff;
     box-shadow: 0 8px 15px rgba(0, 0, 0, .3);
-    transform: scale(1.005);
+    transform: var(--transform);
 }
 
 #write blockquote p {
@@ -255,7 +258,7 @@ body {
 
 #write img:hover {
     box-shadow: 0 8px 15px rgba(0, 0, 0, .3);
-    transform: scale(1.005)
+    transform: var(--transform);
 }
 
 #write table tr {
@@ -315,7 +318,7 @@ code {
 
 .md-fences:hover {
     box-shadow: 0 8px 15px rgba(0, 0, 0, .3);
-    transform: scale(1.005)
+    transform: var(--transform);
 }
 
 .CodeMirror div.CodeMirror-cursor {
@@ -602,7 +605,7 @@ p.md-toc-content {
 
 #write>pre.md-meta-block.md-end-block:hover {
     box-shadow: var(--box-shadow);
-    transform: scale(1.005)
+    transform: var(--transform);
 }
 
 .info-panel-tab-title:hover,
@@ -665,7 +668,7 @@ video {
 .md-alert {
     border-left: 5px solid var(--main-blue);
     background: var(--gradient-color);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
     box-shadow: 0 3px 3px rgba(0, 0, 0, .2);
@@ -673,9 +676,10 @@ video {
 }
 
 .md-alert:hover {
+    backdrop-filter: unset;
     background: #fff;
     box-shadow: 0 8px 15px rgba(0, 0, 0, .3);
-    transform: scale(1.001);
+    transform: var(--transform);
 }
 
 .md-alert.md-alert-tip {
@@ -733,7 +737,7 @@ figure.md-table-fig.table-figure {
 
 figure.md-table-fig.table-figure:hover {
     box-shadow: var(--box-shadow);
-    transform: scale(1.005)
+    transform: var(--transform);
 }
 
 .ty-on-outline-filter .ty-outline-hit {
@@ -796,9 +800,6 @@ input:focus {
     background: hsla(0, 0%, 100%, .3)
 }
 
-/* .dropdown-menu {
-    background: var(--bg-color)
-} */
 
 /* 菜单 */
 
