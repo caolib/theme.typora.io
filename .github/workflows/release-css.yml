@@ -5,54 +5,41 @@ on:
       - '*'  # 监听所有标签的推送
 jobs:
   release:
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
-      with:
-        fetch-depth: 50
-
-    - name: 删除并重新创建dist文件夹
-      run: |
-        rm -rf dist
-        mkdir dist
-
-    - name: 构建变更日志
-      id: github_release
-      uses: mikepenz/release-changelog-builder-action@v3
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-    - name: 获取当前的标签名
-      id: get_tag_name
-      run: |
-        TAG_NAME=${GITHUB_REF##*/}  # 获取标签名，去掉 refs/tags/
-        echo "TAG_NAME=${TAG_NAME}" >> $GITHUB_ENV  # 将标签名存储在环境变量中
-
-    - name: 打包onelight.css和onelight文件夹到dist
-      run: |
-        TAG_NAME=${GITHUB_REF##*/}  # 获取标签名
-        zip -r dist/onelight-${{ env.TAG_NAME }}.zip ./onelight.css ./onelight
-
-    
-    - name: 创建发布
-      id: release
-      uses: actions/create-release@v1
-      with:
-        tag_name: ${{ github.ref }}
-        release_name: Release ${{ github.ref }}
-        body: ${{ steps.read_release_notes.outputs.release_notes }}
-      env:
-        GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
-
-    - name: 上传发布文件
-      uses: actions/upload-release-asset@v1
-      with:
-        upload_url: ${{ steps.release.outputs.upload_url }}
-        asset_path: dist/onelight-${{ env.TAG_NAME }}.zip
-        asset_name: onelight-${{ env.TAG_NAME }}.zip
-        asset_content_type: application/zip
-      env:
-        GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+      runs-on: ubuntu-latest
+  
+      steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+  
+      - name: 删除并重新创建dist文件夹
+        run: |
+          rm -rf dist
+          mkdir dist
+  
+      - name: 获取当前和上一个标签名
+        id: get_tags
+        run: |
+          CURRENT_TAG=${GITHUB_REF##*/}  # 获取当前标签名，去掉 refs/tags/
+          PREVIOUS_TAG=$(git describe --tags --abbrev=0 ${CURRENT_TAG}^)
+          echo "CURRENT_TAG=${CURRENT_TAG}" >> $GITHUB_ENV  # 将当前标签名存储在环境变量中
+          echo "PREVIOUS_TAG=${PREVIOUS_TAG}" >> $GITHUB_ENV  # 将上一个标签名存储在环境变量中
+  
+      - name: 打包onelight.css和onelight文件夹到dist
+        run: |
+          zip -r dist/onelight-${{ env.CURRENT_TAG }}.zip ./onelight.css ./onelight
+  
+      - name: 生成发布说明
+        run: |
+          BODY="Full Changelog: https://github.com/caolib/typora-onelight-theme/compare/${{ env.PREVIOUS_TAG }}...${{ env.CURRENT_TAG }}"
+          echo "BODY=${BODY}" >> $GITHUB_ENV
+  
+      - name: 创建发布
+        id: release
+        uses: actions/create-release@v1
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+          body: ${{ env.BODY }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
 
