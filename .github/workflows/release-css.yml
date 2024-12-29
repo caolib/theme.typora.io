@@ -18,6 +18,7 @@ jobs:
         rm -rf dist
         mkdir dist
 
+
     - name: 获取当前的标签名
       id: get_tag_name
       run: |
@@ -39,6 +40,9 @@ jobs:
       run: |
         echo "::set-output name=release_notes::$(cat release_notes.txt)"
 
+    - name: 读取发布说明
+      run: |
+        echo "${{ steps.read_release_notes.outputs.release_notes }}"
     - name: 创建发布
       id: release
       uses: actions/create-release@v1
@@ -59,9 +63,3 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
 
-  
-    - name: 上传发布说明
-      uses: actions/upload-artifact@v3
-      with:
-        name: release_notes
-        path: release_notes.txt
