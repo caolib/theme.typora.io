@@ -9,7 +9,7 @@
 
 <details>
   <summary>各版本下载量</summary>
-  <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v1.2.0/total"></br>
+  <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v1.2.1/total"></br>
   <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v1.1.0/total"></br>
   <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v0.2.4/total"></br>
   <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v0.2.3/total"></br>
@@ -80,4 +80,3 @@
 > ```
 >
 > <img src="https://s2.loli.net/2024/12/15/Fn6LcrKWC2dlp1J.gif" alt="recording" style="zoom: 50%;" />
-
