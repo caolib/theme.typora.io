@@ -993,3 +993,12 @@ ul#megamenu-menu-list {
 .megamenu-menu-panel table {
     font-weight: unset;
 }
+
+/* mermaid */
+.md-diagram-panel.md-fences-adv-panel {
+    backdrop-filter: blur(20px);
+}
+
+.md-diagram-panel.md-fences-adv-panel:hover {
+    backdrop-filter: blur(50px);
+}
