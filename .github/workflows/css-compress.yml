@@ -1,4 +1,4 @@
-name: 压缩打包
+name: 压缩
 
 on:
   push:
