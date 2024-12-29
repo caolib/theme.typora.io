@@ -9,20 +9,23 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
       with:
-        fetch-depth: 50
+        fetch-depth: 20
 
     - name: 获取最近版本的提交信息
       run: |
-        git log -20 --pretty=format:"- %s" | grep -E "✨|🎉|📃|🎨|🔨|🔧|🐞|🧪|🎈|🔧|🐎|🐳|↩" > release_notes.txt
-
+          git log -20 --pretty=format:"- %s" | grep -E "✨|🎉|📃|🎨|🔨|🔧|🐞|🧪|🎈|🔧|🐎|🐳|↩" > release_notes.txt
+  
+    - name: 将发布消息转换为 base64 编码
+      run: |
+        encoded_notes=$(base64 release_notes.txt)
+        echo "RELEASE_BODY=$encoded_notes" >> $GITHUB_ENV
+  
     - name: 创建发布
       id: release
       uses: actions/create-release@v1
       with:
-        tag_name: v0.0.1
-        release_name: Release v0.0.1
-        body: |
-          $(cat release_notes.txt)  # 使用 cat 命令读取文件内容
-        prerelease: true 
+        tag_name: ${{ github.ref }}
+        release_name: Release ${{ github.ref }}
+        body: ${{ env.RELEASE_BODY }}
       env:
         GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
