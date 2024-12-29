@@ -9,7 +9,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
       with:
-        fetch-depth: 10
+        fetch-depth: 50
 
     - name: 获取最近版本的提交信息
       run: |
@@ -19,8 +19,8 @@ jobs:
       id: release
       uses: actions/create-release@v1
       with:
-        tag_name: ${{ github.ref }}
-        release_name: Release ${{ github.ref }}
+        tag_name: v0.0.1
+        release_name: Release v0.0.1
         body: |
           $(cat release_notes.txt)  # 使用 cat 命令读取文件内容
         prerelease: true 
