@@ -5,43 +5,50 @@ on:
       - '*'  # 监听所有标签的推送
 jobs:
   release:
-      runs-on: ubuntu-latest
-  
-      steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-  
-      - name: 删除并重新创建dist文件夹
-        run: |
-          rm -rf dist
-          mkdir dist
-  
-      - name: 获取当前和上一个标签名
-        id: get_tags
-        run: |
-          CURRENT_TAG=${GITHUB_REF##*/}  # 获取当前标签名，去掉 refs/tags/
-          PREVIOUS_TAG=$(git tag --sort=-v:refname | grep -B 1 ${CURRENT_TAG} | head -n 1)
-          if [ -z "$PREVIOUS_TAG" ]; then
-            PREVIOUS_TAG=$(git tag --sort=-v:refname | head -n 2 | tail -n 1)
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: 删除并重新创建dist文件夹
+      run: |
+        rm -rf dist
+        mkdir dist
+
+    - name: 获取当前和上一个标签名
+      id: get_tags
+      run: |
+        CURRENT_TAG=${GITHUB_REF##*/}  # 获取当前标签名，去掉 refs/tags/
+        TAGS=($(git tag --sort=-v:refname))
+        PREVIOUS_TAG=""
+        for i in "${!TAGS[@]}"; do
+          if [[ "${TAGS[$i]}" == "${CURRENT_TAG}" && $i -gt 0 ]]; then
+            PREVIOUS_TAG=${TAGS[$((i-1))]}
+            break
           fi
-          echo "CURRENT_TAG=${CURRENT_TAG}" >> $GITHUB_ENV  # 将当前标签名存储在环境变量中
-          echo "PREVIOUS_TAG=${PREVIOUS_TAG}" >> $GITHUB_ENV  # 将上一个标签名存储在环境变量中
-  
-      - name: 打包onelight.css和onelight文件夹到dist
-        run: |
-          zip -r dist/onelight-${{ env.CURRENT_TAG }}.zip ./onelight.css ./onelight
-  
-      - name: 生成发布说明
-        run: |
-          BODY="Full Changelog: https://github.com/caolib/typora-onelight-theme/compare/${{ env.PREVIOUS_TAG }}...${{ env.CURRENT_TAG }}"
-          echo "BODY=${BODY}" >> $GITHUB_ENV
-  
-      - name: 创建发布
-        id: release
-        uses: actions/create-release@v1
-        with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
-          body: ${{ env.BODY }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+        done
+        if [ -z "$PREVIOUS_TAG" ]; then
+          PREVIOUS_TAG=${TAGS[1]}
+        fi
+        echo "CURRENT_TAG=${CURRENT_TAG}" >> $GITHUB_ENV  # 将当前标签名存储在环境变量中
+        echo "PREVIOUS_TAG=${PREVIOUS_TAG}" >> $GITHUB_ENV  # 将上一个标签名存储在环境变量中
+
+    - name: 打包onelight.css和onelight文件夹到dist
+      run: |
+        zip -r dist/onelight-${{ env.CURRENT_TAG }}.zip ./onelight.css ./onelight
+
+    - name: 生成发布说明
+      run: |
+        BODY="Full Changelog: https://github.com/caolib/typora-onelight-theme/compare/${{ env.PREVIOUS_TAG }}...${{ env.CURRENT_TAG }}"
+        echo "BODY=${BODY}" >> $GITHUB_ENV
+
+    - name: 创建发布
+      id: release
+      uses: actions/create-release@v1
+      with:
+        tag_name: ${{ github.ref }}
+        release_name: Release ${{ github.ref }}
+        body: ${{ env.BODY }}
+      env:
+        GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
