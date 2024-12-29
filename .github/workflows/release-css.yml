@@ -10,11 +10,14 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
+      with:
+        fetch-depth: 50
 
     - name: 删除并重新创建dist文件夹
       run: |
         rm -rf dist
         mkdir dist
+
     - name: 获取当前的标签名
       id: get_tag_name
       run: |
@@ -27,13 +30,14 @@ jobs:
         zip -r dist/onelight-${{ env.TAG_NAME }}.zip ./onelight.css ./onelight
 
     - name: 获取最近版本的提交信息
+      id: get_release_notes
       run: |
-        git log -20 --pretty=format:"- %s" > release_notes.txt
+        git log -50 --pretty=format:"- %s" | grep -E "✨|🎉|📃|🎨|🔨|🔧|🐞|🧪|🎈|↩" > release_notes.txt
 
-    - name: 读取发布消息内容
-      id: release_notes
+    - name: 读取发布说明
+      id: read_release_notes
       run: |
-        echo "notes=$(cat release_notes.txt)" >> $GITHUB_ENV
+        echo "::set-output name=release_notes::$(cat release_notes.txt)"
 
     - name: 创建发布
       id: release
@@ -41,7 +45,7 @@ jobs:
       with:
         tag_name: ${{ github.ref }}
         release_name: Release ${{ github.ref }}
-        body: ${{ env.notes }}
+        body: ${{ steps.read_release_notes.outputs.release_notes }}
       env:
         GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
 
@@ -54,3 +58,10 @@ jobs:
         asset_content_type: application/zip
       env:
         GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+
+  
+    - name: 上传发布说明
+      uses: actions/upload-artifact@v3
+      with:
+        name: release_notes
+        path: release_notes.txt
