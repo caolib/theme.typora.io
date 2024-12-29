@@ -16,16 +16,6 @@ jobs:
     - name: 获取最近版本的提交信息
       run: |
         git log -20 --pretty=format:"- %s" | grep -E "✨|🎉|📃|🎨|🔨|🔧|🐞|🧪|🎈|🔧|🐎|🐳|↩" > release_notes.txt
-    - name: 强制删除非法字符（包括 emoji 和特殊符号）
-      run: |
-          # 使用 tr 删除所有非 ASCII 字符，只保留字母、数字、空格和标点符号
-          tr -cd '\11\12\15\40-\176' < release_notes.txt > release_notes_cleaned.txt
-
-    - name: 读取发布消息内容
-      id: release_notes
-      run: |
-        # 将清理后的内容存储到环境变量
-        echo "RELEASE_BODY=$(cat release_notes.txt)" >> $GITHUB_ENV
 
     - name: 创建发布
       id: release
@@ -33,8 +23,13 @@ jobs:
       with:
         tag_name: v0.1.11
         release_name: Release v0.1.11
-        body: ${{ env.RELEASE_BODY }}
+        body: 'Release v0.1.11'
         prerelease: true
       env:
         GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
 
+    - name: 上传发布说明
+      uses: actions/upload-artifact@v2
+      with:
+        name: release_notes
+        path: release_notes.txt
