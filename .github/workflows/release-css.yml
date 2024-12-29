@@ -18,6 +18,7 @@ jobs:
         rm -rf dist
         mkdir dist
 
+
     - name: 获取当前的标签名
       id: get_tag_name
       run: |
