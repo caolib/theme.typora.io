@@ -15,33 +15,14 @@ jobs:
       run: |
         git log -20 --pretty=format:"- %s" | grep -E "✨|🎉|📃|🎨|🔨|🔧|🐞|🧪|🎈|🔧|🐎|🐳|↩" > release_notes.txt
 
-    - name: 读取发布消息内容
-      id: release_notes
-      run: |
-        echo "notes=$(cat release_notes.txt)" >> $GITHUB_ENV
-
-    - name: 输出发布消息内容进行调试
-      run: |
-        echo "Release Notes:"
-        echo "${{ env.notes }}"
-
-
-    # - name: 创建发布
-    #   id: release
-    #   uses: actions/create-release@v1
-    #   with:
-    #     tag_name: ${{ github.ref }}
-    #     release_name: Release ${{ github.ref }}
-    #     body: ${{ env.notes }}
-    #   env:
-    #     GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
-
-    # - name: 上传发布文件
-    #   uses: actions/upload-release-asset@v1
-    #   with:
-    #     upload_url: ${{ steps.release.outputs.upload_url }}
-    #     asset_path: dist/onelight-${{ env.TAG_NAME }}.zip
-    #     asset_name: onelight-${{ env.TAG_NAME }}.zip
-    #     asset_content_type: application/zip
-    #   env:
-    #     GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+    - name: 创建发布
+      id: release
+      uses: actions/create-release@v1
+      with:
+        tag_name: ${{ github.ref }}
+        release_name: Release ${{ github.ref }}
+        body: |
+          $(cat release_notes.txt)  # 使用 cat 命令读取文件内容
+        prerelease: true 
+      env:
+        GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
