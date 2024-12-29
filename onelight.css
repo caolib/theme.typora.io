@@ -739,14 +739,20 @@ input:focus {
     background: hsla(0, 0%, 100%, .3)
 }
 
-.dropdown-menu {
+/* .dropdown-menu {
     background: var(--bg-color)
-}
+} */
+
+/* 菜单 */
 
 .dropdown-menu,
 .menu-item-container a.menu-style-btn {
+    background: rgb(255 255 255 / 81%);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px)
 }
 
 .menu-item-container a.menu-style-btn {
@@ -916,4 +922,17 @@ pre.md-fences-advanced.md-focus .md-fences-adv-panel {
     color: #cd00dc;
     font-style: italic;
     text-decoration: underline
+}
+
+
+
+/* 一体化模式的侧边菜单 */
+ul#megamenu-menu-list {
+    height: 100%;
+    background: transparent;
+}
+
+/* 一体化模式最近打开文件列表 */
+.megamenu-menu-panel table {
+    font-weight: unset;
 }
