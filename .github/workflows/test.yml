@@ -1,6 +1,8 @@
-name: test
+name: test release
+
 on:
-    workflow_dispatch:
+  workflow_dispatch:
+
 jobs:
   release:
     runs-on: ubuntu-latest
@@ -9,23 +11,31 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
       with:
-        fetch-depth: 20
+        fetch-depth: 10
 
     - name: 获取最近版本的提交信息
       run: |
-          git log -20 --pretty=format:"- %s" | grep -E "✨|🎉|📃|🎨|🔨|🔧|🐞|🧪|🎈|🔧|🐎|🐳|↩" > release_notes.txt
-  
-    - name: 将发布消息转换为 base64 编码
+        git log -20 --pretty=format:"- %s" | grep -E "✨|🎉|📃|🎨|🔨|🔧|🐞|🧪|🎈|🔧|🐎|🐳|↩" > release_notes.txt
+
+    - name: 清理非法字符
       run: |
-        encoded_notes=$(base64 release_notes.txt)
-        echo "RELEASE_BODY=$encoded_notes" >> $GITHUB_ENV
-  
+        # 删除所有非 ASCII 字符（包括 emoji 和特殊符号）
+        sed -i 's/[^[:print:]\t]//g' release_notes.txt
+
+    - name: 读取发布消息内容
+      id: release_notes
+      run: |
+        # 将清理后的内容存储到环境变量
+        echo "RELEASE_BODY=$(cat release_notes.txt)" >> $GITHUB_ENV
+
     - name: 创建发布
       id: release
       uses: actions/create-release@v1
       with:
-        tag_name: v0.0.11
-        release_name: Release v0.0.11
+        tag_name: ${{ github.ref }}
+        release_name: Release v0.1.11
         body: ${{ env.RELEASE_BODY }}
+        prerelease: true
       env:
         GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+
