@@ -1,9 +1,12 @@
-name: 压缩打包
+name: compress
 
 on:
   push:
     branches:
       - onelight
+    paths:
+      - 'onelight/**'
+      - 'onelight.css'
 
 jobs:
   build:

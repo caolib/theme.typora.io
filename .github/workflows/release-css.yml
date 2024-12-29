@@ -1,4 +1,4 @@
-name: 发布新版本
+name: release
 on:
   push:
     tags:
