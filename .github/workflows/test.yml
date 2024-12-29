@@ -27,8 +27,8 @@ jobs:
       id: release
       uses: actions/create-release@v1
       with:
-        tag_name: v0.1.11
-        release_name: Release v0.1.11
+        tag_name: v0.1.12
+        release_name: Release v0.1.12
         body: ${{ steps.read_release_notes.outputs.release_notes }}
         prerelease: true
       env:
