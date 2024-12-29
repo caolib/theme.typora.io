@@ -9,7 +9,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
       with:
-        fetch-depth: 10
+        fetch-depth: 50
 
     - name: 获取最近版本的提交信息
       run: |
@@ -18,7 +18,8 @@ jobs:
     - name: 读取发布消息内容
       id: release_notes
       run: |
-        echo "notes=$(cat release_notes.txt)" >> $GITHUB_ENV
+        notes=$(cat release_notes.txt | sed "s/'/'\"'\"'/g; s/\"/\\\"/g")
+        echo "notes=$notes" >> $GITHUB_ENV
 
     - name: 输出发布消息内容进行调试
       run: |
