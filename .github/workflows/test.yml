@@ -24,8 +24,8 @@ jobs:
       id: release
       uses: actions/create-release@v1
       with:
-        tag_name: ${{ github.ref }}
-        release_name: Release ${{ github.ref }}
+        tag_name: v0.0.11
+        release_name: Release v0.0.11
         body: ${{ env.RELEASE_BODY }}
       env:
         GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
