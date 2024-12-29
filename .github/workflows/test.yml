@@ -9,7 +9,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
       with:
-        fetch-depth: 10
+        fetch-depth: 50
 
     - name: 获取最近版本的提交信息
       run: |
