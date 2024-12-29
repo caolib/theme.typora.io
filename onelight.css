@@ -12,18 +12,35 @@
     --item-hover-text-color: var(--main-red);
     --monospace: monospace;
     --select-text-bg-color: #3b3e4d;
+    /* 主题色 */
     --main-blue: #166ff3;
     --main-red: #ff6b6b;
     --main-green: #2ed573;
     --main-purple: #c94ae9;
     --main-yellow: #f9b03d;
+    /* 字体 */
     --main-font-family: "Cascadia Code", "喵字果汁体", consolas, "微软雅黑", "PingFang SC", "Microsoft YaHei", sans-serif;
     --code--bg-color: #282c34;
     --code--bg-color-light: #3d404e;
+    /* 悬浮 */
     --item-bg-color-red: #f4433638;
     --item-bg-color-blue: #42a5f542;
+    /* 阴影 */
     --box-shadow: 0px 4px 4px rgba(0, 0, 0, .1);
-    --transition: box-shadow 0.3s ease, transform 0.3s ease
+    --transition: box-shadow 0.3s ease, transform 0.3s ease;
+    /* 左到右透明渐变 */
+    --gradient-color: linear-gradient(to right, white, rgba(255, 255, 255, 0));
+    /* github警告框 */
+    --tip-color: #1f883d;
+    --tip-border: solid 0.5px #1f883d94;
+    --note-color: #0969da;
+    --note-border: solid 0.5px #0969da94;
+    --warning-color: #faad14;
+    --warning-border: solid 0.5px #faad1494;
+    --caution-color: #cf222e;
+    --caution-border: solid 0.5px #cf222e94;
+    --important-color: #8250df;
+    --important-border: solid 0.5px #8250df94;
 }
 
 body {
@@ -174,7 +191,8 @@ body {
 }
 
 #write blockquote {
-    background: #fff;
+    background: var(--gradient-color);
+    backdrop-filter: blur(5px);
     border-bottom-right-radius: 10px;
     border-left: 5px solid var(--main-blue);
     border-top-right-radius: 10px;
@@ -190,8 +208,9 @@ body {
 }
 
 #write blockquote:hover {
+    background: #fff;
     box-shadow: 0 8px 15px rgba(0, 0, 0, .3);
-    transform: scale(1.01)
+    transform: scale(1.005);
 }
 
 #write blockquote p {
@@ -236,7 +255,7 @@ body {
 
 #write img:hover {
     box-shadow: 0 8px 15px rgba(0, 0, 0, .3);
-    transform: scale(1.02)
+    transform: scale(1.005)
 }
 
 #write table tr {
@@ -583,7 +602,7 @@ p.md-toc-content {
 
 #write>pre.md-meta-block.md-end-block:hover {
     box-shadow: var(--box-shadow);
-    transform: scale(1.01)
+    transform: scale(1.005)
 }
 
 .info-panel-tab-title:hover,
@@ -644,16 +663,54 @@ video {
 
 /* github警告框 */
 .md-alert {
-    background: #fff;
+    border-left: 5px solid var(--main-blue);
+    background: var(--gradient-color);
+    backdrop-filter: blur(5px);
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
     box-shadow: 0 3px 3px rgba(0, 0, 0, .2);
-    transition: var(--transition)
+    transition: var(--transition);
 }
 
 .md-alert:hover {
+    background: #fff;
     box-shadow: 0 8px 15px rgba(0, 0, 0, .3);
-    transform: scale(1.01)
+    transform: scale(1.001);
+}
+
+.md-alert.md-alert-tip {
+    border-bottom: var(--tip-border);
+    border-right: var(--tip-border);
+    border-top: var(--tip-border);
+    border-left-color: var(--tip-color);
+}
+
+.md-alert.md-alert-note {
+    border-bottom: var(--note-border);
+    border-right: var(--note-border);
+    border-top: var(--note-border);
+    border-left-color: var(--note-color);
+}
+
+.md-alert.md-alert-important {
+    border-bottom: var(--important-border);
+    border-right: var(--important-border);
+    border-top: var(--important-border);
+    border-left-color: var(--important-color);
+}
+
+.md-alert.md-alert-caution {
+    border-bottom: var(--caution-border);
+    border-right: var(--caution-border);
+    border-top: var(--caution-border);
+    border-left-color: var(--caution-color);
+}
+
+.md-alert.md-alert-warning {
+    border-bottom: var(--warning-border);
+    border-right: var(--warning-border);
+    border-top: var(--warning-border);
+    border-left-color: var(--warning-color);
 }
 
 .md-alert.md-alert-warning {
@@ -676,7 +733,7 @@ figure.md-table-fig.table-figure {
 
 figure.md-table-fig.table-figure:hover {
     box-shadow: var(--box-shadow);
-    transform: scale(1.01)
+    transform: scale(1.005)
 }
 
 .ty-on-outline-filter .ty-outline-hit {
