@@ -4,12 +4,12 @@
 [![](https://img.shields.io/github/v/release/caolib/one-light-theme?labelColor=blue&color=red)](https://github.com/caolib/typora-onelight-theme/releases)
 [![](https://img.shields.io/github/last-commit/caolib/one-light-theme?labelColor=white&color=blue)](https://github.com/caolib/typora-onelight-theme/activity)
 [![](https://api.netlify.com/api/v1/badges/6ca72e1b-7dc6-4d51-8542-e07bf9ad0a88/deploy-status)](https://typora-theme.netlify.app)
-[![发布新版本](https://github.com/caolib/typora-onelight-theme/actions/workflows/release-css.yml/badge.svg?branch=onelight)](https://github.com/caolib/typora-onelight-theme/actions/workflows/release-css.yml)
-
+[![压缩打包](https://github.com/caolib/typora-onelight-theme/actions/workflows/css-compress.yml/badge.svg)](https://github.com/caolib/typora-onelight-theme/actions/workflows/css-compress.yml)
 ---
 
 <details>
   <summary>各版本下载量</summary>
+  <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v1.2.0/total"></br>
   <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v1.1.0/total"></br>
   <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v0.2.4/total"></br>
   <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v0.2.3/total"></br>
