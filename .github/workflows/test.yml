@@ -11,7 +11,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
       with:
-        fetch-depth: 10
+        fetch-depth: 100
 
     - name: 获取最近版本的提交信息
       id: get_release_notes
