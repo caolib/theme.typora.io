@@ -16,11 +16,10 @@ jobs:
     - name: 获取最近版本的提交信息
       run: |
         git log -20 --pretty=format:"- %s" | grep -E "✨|🎉|📃|🎨|🔨|🔧|🐞|🧪|🎈|🔧|🐎|🐳|↩" > release_notes.txt
-
     - name: 清理非法字符
       run: |
-        # 删除所有非 ASCII 字符（包括 emoji 和特殊符号）
-        sed -i 's/[^[:print:]\t]//g' release_notes.txt
+          # 使用 iconv 删除所有无法转换的字符（非 ASCII 字符）
+          iconv -f utf-8 -t ascii//TRANSLIT release_notes.txt -o release_notes_cleaned.txt
 
     - name: 读取发布消息内容
       id: release_notes
