@@ -411,6 +411,7 @@ mark {
 }
 
 #write pre {
+    background: var(--code-bg-color);
     font-family: var(--main-font-family)
 }
 

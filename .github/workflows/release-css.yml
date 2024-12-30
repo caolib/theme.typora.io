@@ -33,6 +33,6 @@ jobs:
       with:
         tag_name: ${{ github.ref }}
         release_name: Release ${{ github.ref }}
-        body: Release ${{ github.ref }}
+        body: "[LOG](https://github.com/caolib/typora-onelight-theme/commits/${{ github.ref }})"
       env:
         GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
