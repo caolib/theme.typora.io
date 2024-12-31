@@ -25,7 +25,8 @@ jobs:
 
     - name: 打包onelight.css和onelight文件夹到dist
       run: |
-        zip -r dist/onelight-${{ github.ref }}.zip ./onelight.css ./onelight
+        echo ${{ env.TAG_NAME }}
+        zip -r dist/onelight-${{ env.TAG_NAME }}.zip ./onelight.css ./onelight
 
     - name: 创建发布
       id: release
@@ -34,7 +35,6 @@ jobs:
         tag_name: ${{ github.ref }}
         release_name: Release ${{ github.ref }}
         body: "[LOG](https://github.com/caolib/typora-onelight-theme/commits/${{ github.ref }})"
-        draft: false
       env:
         GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
 
@@ -42,8 +42,8 @@ jobs:
       uses: actions/upload-release-asset@v1
       with:
         upload_url: ${{ steps.release.outputs.upload_url }}
-        asset_path: dist/onelight-${{ github.ref }}.zip
-        asset_name: onelight-${{ github.ref }}.zip
+        asset_path: dist/onelight-${{ env.TAG_NAME }}.zip
+        asset_name: onelight-${{ env.TAG_NAME }}.zip
         asset_content_type: application/zip
       env:
         GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
