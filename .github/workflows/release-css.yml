@@ -36,3 +36,13 @@ jobs:
         body: "[LOG](https://github.com/caolib/typora-onelight-theme/commits/${{ github.ref }})"
       env:
         GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+
+    - name: 上传发布文件
+      uses: actions/upload-release-asset@v1
+      with:
+        upload_url: ${{ steps.release.outputs.upload_url }}
+        asset_path: dist/onelight-${{ env.TAG_NAME }}.zip
+        asset_name: onelight-${{ env.TAG_NAME }}.zip
+        asset_content_type: application/zip
+      env:
+        GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
