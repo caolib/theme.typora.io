@@ -25,7 +25,7 @@ jobs:
 
     - name: 打包onelight.css和onelight文件夹到dist
       run: |
-        zip -r dist/onelight-${{ env.CURRENT_TAG }}.zip ./onelight.css ./onelight
+        zip -r dist/onelight-${{ env.TAG_NAME }}.zip ./onelight.css ./onelight
 
     - name: 创建发布
       id: release
