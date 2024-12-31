@@ -21,6 +21,7 @@ jobs:
       id: get_tag_name
       run: |
           TAG_NAME=${GITHUB_REF##*/}  # 获取标签名，去掉 refs/tags/
+          echo "TAG_NAME=${TAG_NAME}" >> $GITHUB_ENV  # 将标签名存储在环境变量中
 
     - name: 打包onelight.css和onelight文件夹到dist
       run: |
