@@ -194,44 +194,33 @@ body {
 }
 
 /* 引用块 */
-
 #write blockquote {
-    background: rgba(85, 180, 103, 0.1);
-    border-color: rgba(85, 180, 103, 0.5);
-    color: rgb(85, 180, 103);
+    background: var(--gradient-color);
+    backdrop-filter: blur(5px);
+    border-bottom-right-radius: 10px;
+    border-left: 5px solid var(--main-blue);
+    border-top-right-radius: 10px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, .2);
+    color: #6a737d;
+    font-size: .9em;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 10px 10px 10px 20px;
+    transition: var(--transition)
 }
 
-#write blockquote {
-    --lobe-markdown-margin-multiple: 1;
-    overflow: hidden;
-    gap: 0.75em;
-    margin-block: calc(1em);
-    padding-block: calc(1em);
-    padding-inline: 1em;
-    border: 1px solid transparent;
-    border-radius: calc(8px);
-}
-
-#write blockquote {
-    /* display: -webkit-box; */
-    /* display: -webkit-flex; */
-    display: -ms-flexbox;
-    display: flex;
-    /* -webkit-flex-direction: row; */
-    -ms-flex-direction: row;
-    flex-direction: row;
-    /* -webkit-align-items: flex-start; */
-    -webkit-box-align: flex-start;
-    -ms-flex-align: flex-start;
-    align-items: flex-start;
+#write blockquote:hover {
+    background: #fff;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .3);
+    transform: scale(1.005);
 }
 
 #write blockquote p {
-    margin-block-start: calc(1em);
-    margin-block-end: calc(1em);
-    line-height: var(1.8);
-    letter-spacing: 0.02em;
+    line-height: 26px
 }
+
 
 #write a {
     border-bottom: 2px solid #c94ae9;
