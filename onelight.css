@@ -18,6 +18,7 @@
     --main-green: #2ed573;
     --main-purple: #c94ae9;
     --main-yellow: #f9b03d;
+    --light-color: #f7f7f7;
     /* 字体 */
     --main-font-family: "Cascadia Code", "喵字果汁体", consolas, "微软雅黑", "PingFang SC", "Microsoft YaHei", sans-serif;
     --code--bg-color: #282c34;
@@ -192,32 +193,44 @@ body {
     font-weight: 700
 }
 
+/* 引用块 */
+
 #write blockquote {
-    background: var(--gradient-color);
-    backdrop-filter: blur(10px);
-    border-bottom-right-radius: 10px;
-    border-left: 5px solid var(--main-blue);
-    border-top-right-radius: 10px;
-    box-shadow: 0 4px 5px rgba(0, 0, 0, .2);
-    color: #6a737d;
-    font-size: .9em;
-    margin-bottom: 16px;
-    margin-top: 16px;
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
-    padding: 10px 10px 10px 20px;
-    transition: var(--transition)
+    background: rgba(85, 180, 103, 0.1);
+    border-color: rgba(85, 180, 103, 0.5);
+    color: rgb(85, 180, 103);
 }
 
-#write blockquote:hover {
-    backdrop-filter: unset;
-    background: #fff;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, .3);
-    transform: var(--transform);
+#write blockquote {
+    --lobe-markdown-margin-multiple: 1;
+    overflow: hidden;
+    gap: 0.75em;
+    margin-block: calc(1em);
+    padding-block: calc(1em);
+    padding-inline: 1em;
+    border: 1px solid transparent;
+    border-radius: calc(8px);
+}
+
+#write blockquote {
+    /* display: -webkit-box; */
+    /* display: -webkit-flex; */
+    display: -ms-flexbox;
+    display: flex;
+    /* -webkit-flex-direction: row; */
+    -ms-flex-direction: row;
+    flex-direction: row;
+    /* -webkit-align-items: flex-start; */
+    -webkit-box-align: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
 }
 
 #write blockquote p {
-    line-height: 26px
+    margin-block-start: calc(1em);
+    margin-block-end: calc(1em);
+    line-height: var(1.8);
+    letter-spacing: 0.02em;
 }
 
 #write a {
@@ -393,8 +406,8 @@ code {
 }
 
 .cm-s-inner .cm-error {
-    background-color: #e9405c;
-    color: #fff
+    border: solid 0.25px #e9405c;
+    color: #fff;
 }
 
 pre[lang=flow],
@@ -1003,4 +1016,14 @@ ul#megamenu-menu-list {
 
 .md-diagram-panel.md-fences-adv-panel:hover {
     backdrop-filter: blur(50px);
+}
+
+
+/* 代码块下span文本 */
+pre.CodeMirror-line>span {
+    color: var(--light-color);
+}
+
+.md-rawblock-tooltip-name {
+    color: var(--main-blue);
 }
