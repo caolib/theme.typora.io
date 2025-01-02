@@ -4,7 +4,6 @@
 [![](https://img.shields.io/github/v/release/caolib/one-light-theme?labelColor=blue&color=red)](https://github.com/caolib/typora-onelight-theme/releases)
 [![](https://img.shields.io/github/last-commit/caolib/one-light-theme?labelColor=white&color=blue)](https://github.com/caolib/typora-onelight-theme/activity)
 [![](https://api.netlify.com/api/v1/badges/6ca72e1b-7dc6-4d51-8542-e07bf9ad0a88/deploy-status)](https://typora-theme.netlify.app)
-
 [![压缩打包](https://github.com/caolib/typora-onelight-theme/actions/workflows/css-compress.yml/badge.svg)](https://github.com/caolib/typora-onelight-theme/actions/workflows/css-compress.yml)
 ---
 
