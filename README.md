@@ -9,9 +9,9 @@
 ---
 
 <details><summary><kbd>各版本下载量</summary></kbd>
-  <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v1.2.2/total"></br>
-  <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v1.2.1/total"></br>
-  <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v1.1.0/total"></br>
+      <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v1.2.4/total"></br>
+  <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v1.2.3/total"></br>
+  <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v1.2.0/total"></br>
   <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v0.2.4/total"></br>
   <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v0.2.3/total"></br>
   <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v0.2.2/total"/></br>
@@ -20,6 +20,7 @@
   <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v0.0.6/total"/></br>
   <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v0.0.5/total"/></br>
 </details>
+
 
 
 > [!tip]
@@ -82,8 +83,3 @@
 > ```
 >
 > <img src="https://s2.loli.net/2024/12/15/Fn6LcrKWC2dlp1J.gif" alt="recording" style="zoom: 50%;" />
-
-
-
-> 回去晚饭后12呼呼u2h3u1h2u3u2udfgdg给我黑哦给我oie感觉哦i网金额红酒哦i急哦囧join囧囧囧就级合并空间环境开会见客户尽快会尽快和健康健康2后健康2后健康后可12老会计克隆将开了就开了就开了将3就立刻就哭了就开了2进口料件离开囧欧科佳立刻囧克隆将看就看利囧刻录机快乐囧克隆将考虑就考虑囧里看见了看就看了23后窘境偶奇偶就立刻就会离开后23交流空间里看见了2
-

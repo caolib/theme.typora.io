@@ -34,6 +34,7 @@
     /* github警告框 */
     --tip-color: #1f883d;
     --tip-border: solid 0.5px #1f883d94;
+    --tip-bg-color: #f0f9eb;
     --note-color: #0969da;
     --note-border: solid 0.5px #0969da94;
     --warning-color: #faad14;
@@ -214,7 +215,8 @@ body {
 #write blockquote:hover {
     background: #fff;
     box-shadow: 0 8px 15px rgba(0, 0, 0, .3);
-    transform: scale(1.005);
+    transform: var(--transform);
+    backdrop-filter: unset;
 }
 
 #write blockquote p {
@@ -678,13 +680,15 @@ video {
     transition: var(--transition);
 }
 
+/* 悬浮样式 */
 .md-alert:hover {
     backdrop-filter: unset;
-    background: #fff;
+    background: #fff !important;
     box-shadow: 0 8px 15px rgba(0, 0, 0, .3);
     transform: var(--transform);
 }
 
+/* 提示 */
 .md-alert.md-alert-tip {
     border-bottom: var(--tip-border);
     border-right: var(--tip-border);
@@ -692,6 +696,11 @@ video {
     border-left-color: var(--tip-color);
 }
 
+.md-alert.md-alert-tip * {
+    color: var(--tip-color);
+}
+
+/* 批注 */
 .md-alert.md-alert-note {
     border-bottom: var(--note-border);
     border-right: var(--note-border);
@@ -699,6 +708,11 @@ video {
     border-left-color: var(--note-color);
 }
 
+.md-alert.md-alert-note * {
+    color: var(--note-color);
+}
+
+/* 重要 */
 .md-alert.md-alert-important {
     border-bottom: var(--important-border);
     border-right: var(--important-border);
@@ -706,6 +720,11 @@ video {
     border-left-color: var(--important-color);
 }
 
+.md-alert.md-alert-important * {
+    color: var(--important-color);
+}
+
+/* 注意 */
 .md-alert.md-alert-caution {
     border-bottom: var(--caution-border);
     border-right: var(--caution-border);
@@ -713,6 +732,11 @@ video {
     border-left-color: var(--caution-color);
 }
 
+.md-alert.md-alert-caution * {
+    color: var(--caution-color);
+}
+
+/* 警告 */
 .md-alert.md-alert-warning {
     border-bottom: var(--warning-border);
     border-right: var(--warning-border);
@@ -720,15 +744,15 @@ video {
     border-left-color: var(--warning-color);
 }
 
-.md-alert.md-alert-warning {
-    border-left-color: #faad14
+.md-alert.md-alert-warning * {
+    color: var(--warning-color);
 }
 
 .md-alert-text-warning {
-    color: #faad14
+    color: var(--warning-color);
 }
 
-.md-blockmeta {
+*/ .md-blockmeta {
     color: #777
 }
 
