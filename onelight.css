@@ -696,9 +696,10 @@ video {
     border-left-color: var(--tip-color);
 }
 
-.md-alert.md-alert-tip * {
+div.md-alert.md-alert-tip * span[md-inline="plain"].md-plain {
     color: var(--tip-color);
 }
+
 
 /* 批注 */
 .md-alert.md-alert-note {
@@ -708,7 +709,7 @@ video {
     border-left-color: var(--note-color);
 }
 
-.md-alert.md-alert-note * {
+div.md-alert.md-alert-note * span[md-inline="plain"].md-plain {
     color: var(--note-color);
 }
 
@@ -720,7 +721,7 @@ video {
     border-left-color: var(--important-color);
 }
 
-.md-alert.md-alert-important * {
+div.md-alert.md-alert-important * span[md-inline="plain"].md-plain {
     color: var(--important-color);
 }
 
@@ -732,7 +733,7 @@ video {
     border-left-color: var(--caution-color);
 }
 
-.md-alert.md-alert-caution * {
+div.md-alert.md-alert-caution * span[md-inline="plain"].md-plain {
     color: var(--caution-color);
 }
 
@@ -744,7 +745,7 @@ video {
     border-left-color: var(--warning-color);
 }
 
-.md-alert.md-alert-warning * {
+div.md-alert.md-alert-warning * span[md-inline="plain"].md-plain {
     color: var(--warning-color);
 }
 
@@ -1029,6 +1030,10 @@ ul#megamenu-menu-list {
 
 .md-diagram-panel.md-fences-adv-panel:hover {
     backdrop-filter: blur(50px);
+}
+
+pre.md-fences.md-end-block.md-fences-with-lineno.md-diagram.md-fences-advanced.ty-contain-cm {
+    background: transparent !important;
 }
 
 
