@@ -166,7 +166,7 @@ body {
 
 #write ol,
 #write ul {
-    color: var(--main-red);
+    /* color: var(--main-red); */
     margin-bottom: 8px;
     margin-top: 8px;
     padding-left: 40px
