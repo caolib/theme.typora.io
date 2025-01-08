@@ -45,6 +45,7 @@
     --important-border: solid 0.5px #8250df94;
     /* 放大 */
     --transform: scale(1.005);
+    --width-mode: fit-content;
 }
 
 body {
@@ -72,6 +73,7 @@ body {
 }
 
 #write p {
+    width: var(--width-mode);
     line-height: 26px;
     margin: 0;
     padding-bottom: 8px;
@@ -195,6 +197,7 @@ body {
 
 /* 引用块 */
 #write blockquote {
+    width: var(--width-mode);
     background: var(--gradient-color);
     backdrop-filter: blur(5px);
     border-bottom-right-radius: 10px;
@@ -417,6 +420,7 @@ mark {
 }
 
 #write pre {
+    width: var(--width-mode);
     background: var(--code-bg-color);
     font-family: var(--main-font-family)
 }
@@ -681,6 +685,7 @@ video {
 
 /* github警告框 */
 .md-alert {
+    width: var(--width-mode);
     border-left: 5px solid var(--main-blue);
     background: var(--gradient-color);
     backdrop-filter: blur(10px);
