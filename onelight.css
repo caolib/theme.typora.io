@@ -78,6 +78,7 @@ body {
     padding-top: 8px
 }
 
+
 #write input[type=checkbox] {
     left: -3px;
     margin-right: 5px;
@@ -1056,6 +1057,18 @@ ul#megamenu-menu-list {
 
 pre.md-fences.md-end-block.md-fences-with-lineno.md-diagram.md-fences-advanced.ty-contain-cm {
     background: transparent !important;
+}
+
+/* 代码框右下角的语言类型显示 */
+pre.md-fences.md-end-block.md-fences-with-lineno.ty-contain-cm.modeLoaded::after {
+    content: attr(lang);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #e0e0e0;
+    padding: 2px 5px;
+    border-radius: 3px;
+    z-index: 100;
 }
 
 
