@@ -72,7 +72,6 @@ body {
 }
 
 #write p {
-    color: #000;
     line-height: 26px;
     margin: 0;
     padding-bottom: 8px;
@@ -202,7 +201,7 @@ body {
     border-left: 5px solid var(--main-blue);
     border-top-right-radius: 10px;
     box-shadow: 0 4px 5px rgba(0, 0, 0, .2);
-    color: #6a737d;
+    color: #606060;
     font-size: .9em;
     margin-bottom: 16px;
     margin-top: 16px;
@@ -248,6 +247,7 @@ body {
     word-wrap: break-word
 }
 
+/* 图片 */
 #write img {
     border: 0;
     border-radius: 5px;
@@ -265,14 +265,16 @@ body {
     transform: var(--transform);
 }
 
+/* 表格 */
 #write table tr {
     background-color: #fff;
     border: 0;
     border-top: 1px solid #ccc
 }
 
+/* 交替颜色 */
 #write table tr:nth-child(2n) {
-    background-color: #f8f8f8
+    background-color: #f3f3f3
 }
 
 #write table tr td,
@@ -594,11 +596,19 @@ kbd {
     font-weight: 700
 }
 
+/* 目录 */
 p.md-toc-content {
-    background: #fff;
+    background: var(--gradient-color);
+    backdrop-filter: blur(5px);
     border-radius: 10px;
     box-shadow: var(--box-shadow)
 }
+
+p.md-toc-content:hover {
+    background: #fff;
+}
+
+
 
 #write>pre.md-meta-block.md-end-block {
     background: #fff;
@@ -894,6 +904,7 @@ span[alt=highlight] {
     width: 5px
 }
 
+/* 主界面背景图片 */
 content {
     background-color: transparent;
     background-image: url('./onelight/img/bg.gif');
@@ -903,6 +914,20 @@ content {
     transition: background-image .5s ease-in-out, background-size .5s ease-in-out
 }
 
+
+/* 一体化菜单界面背景图片 */
+div#megamenu-section-open {
+    background-color: transparent;
+    background-image: url('./onelight/img/bg3.gif');
+    background-position: 100% 0%;
+    background-repeat: no-repeat;
+    background-size: 100px auto;
+    transition: background-image .5s ease-in-out, background-size .5s ease-in-out;
+}
+
+.megamenu-opened header {
+    background-image: unset;
+}
 
 ::-moz-selection {
     background: var(--item-bg-color-blue)
@@ -996,9 +1021,6 @@ pre.md-fences-advanced.md-focus .md-fences-adv-panel {
     font-family: var(--main-font-family)
 }
 
-#write table tr:hover {
-    background: hsla(0, 0%, 100%, .34)
-}
 
 .cm-s-typora-default .cm-tag {
     color: #ff7800

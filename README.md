@@ -32,9 +32,20 @@
 
 ---
 
-![](https://s2.loli.net/2024/12/29/4zq9VbuAKvkFhYo.png)
+![image-20250108140354139](https://s2.loli.net/2025/01/08/fNQF1ZCOgGydEUL.png)
 
-![image-20241229005801957](https://s2.loli.net/2024/12/29/mHh5nuwyVWvpoGI.png)
+![image-20250108140529374](https://s2.loli.net/2025/01/08/aMkKwdmVuTCtW4G.png)
+
+![image-20250108140656725](https://s2.loli.net/2025/01/08/TyJutRejBLX3xGW.png)
+
+<details><summary><kbd>展开查看更多截图</summary></kbd>
+  <img src="https://s2.loli.net/2025/01/08/Ir1mgZCto4YS6lj.png"></br>
+  <img src="https://s2.loli.net/2025/01/08/ugxkC5UyvqGw6iP.png"></br>
+  <img src="https://s2.loli.net/2025/01/08/cAgBOqFoCMYE8S6.png"></br>
+	一体化菜单界面
+  <img src="https://s2.loli.net/2025/01/08/QF2UA9zPOW5X6ji.png"></br>
+</details>
+
 
 ---
 
@@ -73,7 +84,7 @@
 
 > [!tip]
 >
-> 背景图片在`onelight/img`文件夹下，默认是`bg.gif`，可以自行替换,你也可以在css文件中搜索并替换文件
+> 背景图片在`onelight/img`文件夹下，默认是`bg.gif`，可以自行替换,你也可以在css文件中搜索关键字 `gif` 找到对应代码进行替换，最好使用透明背景的图片
 >
 > ```css
 > content {
@@ -82,7 +93,7 @@
 >      background-image: url('./onelight/img/bg.gif');
 >      background-position: 100% 100%;
 >      background-repeat: no-repeat;
->      background-size: 100px auto; // 调整大小
+>      background-size: 100px auto; // 调整图片显示大小
 >      transition: background-image .5s ease-in-out, background-size .5s ease-in-out
 > }
 > ```
@@ -95,17 +106,17 @@
 
 ## 5.其他
 
-<img align='right' src="https://s2.loli.net/2025/01/04/zt7O3daMLDC5EHW.png" alt="喜欢" />❓ 有问题可以在 [Issues](https://github.com/caolib/typora-onelight-theme/issues) 提问
-
-⭐ 如果喜欢主题的话，请点个star
-
-📄 [docs](https://github.com/caolib/typora-onelight-theme/tree/onelight/docs)文件夹中有示例文章的md文件
 
 
+<img align='right' src="https://s2.loli.net/2025/01/04/zt7O3daMLDC5EHW.png" alt="喜欢" />✅ 一体化模式下主题效果更佳
 
+❓ 有问题可以在 [Issues](https://github.com/caolib/typora-onelight-theme/issues) 提问
 
+⭐ 如果喜欢主题的话，请给我一个star，谢谢！
 
+📄 [docs](https://github.com/caolib/typora-onelight-theme/tree/onelight/docs) 文件夹中有示例文章的markdown文件
 
+🖼️ [img](https://github.com/caolib/typora-onelight-theme/tree/onelight/onelight/img) 文件夹中有主题的背景图片，你可以替换成你喜欢的任何图片，如果不需要可以直接删除
 
 
 
