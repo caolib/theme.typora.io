@@ -52,9 +52,16 @@
 
 ## **2.如何使用**
 
-- 下载[主题文件](https://github.com/caolib/typora-onelight-theme/releases)
-- 在typora中选择 文件 → 偏好设置 → 外观 → 打开主题文件夹
-- 将下载的zip解压，将**css文件**和**文件夹**粘贴到typora的主题文件夹中
+> [!important]
+>
+> **推荐**
+>
+> - 下载 [主题文件压缩包](https://github.com/caolib/typora-onelight-theme/releases)
+> - 在typora中选择 文件 → 偏好设置 → 外观 → 打开主题文件夹
+> - 将下载的压缩包解压，将**css文件**和**文件夹**粘贴到typora的主题文件夹中
+> - 重启Typora然后在菜单栏切换主题，大功告成
+
+
 
 > [!caution]
 >
@@ -77,13 +84,15 @@
 在`onelight.css`文件开头设置了默认字体，可以自行修改
 ![](https://github.com/user-attachments/assets/ab75260f-cff0-43b7-b8e5-dfea38e8525c)
 
-> **如果要使用主题中的字体，建议下载字体安装**,中文字体是[喵字果汁体](https://clb-cdn.pages.dev/fonts/MiaoZi-GuoZhiTi.ttf)，英文字体是Cascadia Code
+> [!tip] 
+>
+> **如果要使用主题中的字体，建议下载字体安装**,中文字体是 [喵字果汁体](https://cdn.jsdelivr.net/gh/caolib/cdn@main/fonts/MiaoZi-GuoZhiTi.ttf)，英文字体是 [Cascadia Code](https://cdn.jsdelivr.net/gh/caolib/cdn@main/fonts/CascadiaCode.ttf)
 
 ---
 
 ## **4.关于背景图片**
 
-> [!tip]
+> [!important]
 >
 > 背景图片在`onelight/img`文件夹下，默认是`bg.gif`，可以自行替换,你也可以在css文件中搜索关键字 `gif` 找到对应代码进行替换，最好使用透明背景的图片
 >
