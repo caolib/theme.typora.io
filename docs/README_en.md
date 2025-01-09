@@ -6,6 +6,7 @@
     English
 </div>
 
+---
 
 
 ![](https://img.shields.io/github/downloads/caolib/typora-onelight-theme/total?labelColor=black&color=blue)
