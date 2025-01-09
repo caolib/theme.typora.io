@@ -225,6 +225,7 @@ body {
 
 
 #write a {
+    margin: 3px;
     border-bottom: 2px solid #c94ae9;
     color: #c94ae9;
     font-weight: 700;
