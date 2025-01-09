@@ -2,7 +2,7 @@
 
 <div align="center">
     简体中文
-    ·
+    |
     <a href="https://github.com/caolib/typora-onelight-theme/blob/onelight/docs/README_en.md">English</a>
 </div>
 
