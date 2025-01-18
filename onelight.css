@@ -43,8 +43,8 @@
     --caution-border: solid 0.5px #cf222e94;
     --important-color: #8250df;
     --important-border: solid 0.5px #8250df94;
-    /* 放大 */
-    --transform: scale(1.005);
+    /* 放大倍数 */
+    --transform: scale(1);
 }
 
 body {
@@ -321,12 +321,12 @@ code {
     color: #ececec;
     margin: 0 0 20px;
     padding: .4em 1em .3em;
-    transition: var(--transition)
+    /* transition: var(--transition) */
 }
 
 .md-fences:hover {
     box-shadow: 0 8px 15px rgba(0, 0, 0, .3);
-    transform: var(--transform);
+    /* transform: var(--transform); */
 }
 
 .CodeMirror div.CodeMirror-cursor {
