@@ -44,7 +44,7 @@
     --important-color: #8250df;
     --important-border: solid 0.5px #8250df94;
     /* 放大倍数 */
-    --transform: scale(1);
+    /* --transform: scale(1); */
 }
 
 body {
@@ -215,7 +215,7 @@ body {
 #write blockquote:hover {
     background: #fff;
     box-shadow: 0 8px 15px rgba(0, 0, 0, .3);
-    transform: var(--transform);
+    /* transform: var(--transform); */
     backdrop-filter: unset;
 }
 
@@ -264,7 +264,7 @@ body {
 
 #write img:hover {
     box-shadow: 0 8px 15px rgba(0, 0, 0, .3);
-    transform: var(--transform);
+    /* transform: var(--transform); */
 }
 
 /* 表格 */
@@ -321,12 +321,11 @@ code {
     color: #ececec;
     margin: 0 0 20px;
     padding: .4em 1em .3em;
-    /* transition: var(--transition) */
+    transition: var(--transition)
 }
 
 .md-fences:hover {
     box-shadow: 0 8px 15px rgba(0, 0, 0, .3);
-    /* transform: var(--transform); */
 }
 
 .CodeMirror div.CodeMirror-cursor {
@@ -622,7 +621,7 @@ p.md-toc-content:hover {
 
 #write>pre.md-meta-block.md-end-block:hover {
     box-shadow: var(--box-shadow);
-    transform: var(--transform);
+    /* transform: var(--transform); */
 }
 
 .info-panel-tab-title:hover,
@@ -697,7 +696,7 @@ video {
     backdrop-filter: unset;
     background: #fff !important;
     box-shadow: 0 8px 15px rgba(0, 0, 0, .3);
-    transform: var(--transform);
+    /* transform: var(--transform); */
 }
 
 /* 提示 */
@@ -777,7 +776,7 @@ figure.md-table-fig.table-figure {
 
 figure.md-table-fig.table-figure:hover {
     box-shadow: var(--box-shadow);
-    transform: var(--transform);
+    /* transform: var(--transform); */
 }
 
 .ty-on-outline-filter .ty-outline-hit {
