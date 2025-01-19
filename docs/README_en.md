@@ -5,7 +5,6 @@
     |
     English
 </p>
-
 ![](https://img.shields.io/github/downloads/caolib/typora-onelight-theme/total?labelColor=black&color=blue)
 [![](https://img.shields.io/github/v/release/caolib/typora-onelight-theme?labelColor=black&color=red)](https://github.com/caolib/typora-onelight-theme/releases)
 [![](https://img.shields.io/github/last-commit/caolib/typora-onelight-theme?labelColor=black&color=blue)](https://github.com/caolib/typora-onelight-theme/activity)
@@ -13,6 +12,7 @@
 [![压缩打包](https://github.com/caolib/typora-onelight-theme/actions/workflows/css-compress.yml/badge.svg)](https://github.com/caolib/typora-onelight-theme/actions/workflows/css-compress.yml)
 
 <details><summary><kbd>version history</summary></kbd>
+      <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v1.4.1/total"></br>
   <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v1.4.0/total"></br>
   <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v1.3.0/total"></br>
   <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v1.2.4/total"></br>
@@ -26,6 +26,7 @@
   <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v0.0.6/total"/></br>
   <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v0.0.5/total"/></br>
 </details>
+
 ---
 
 ## **1.Overview**
@@ -43,7 +44,7 @@
 
 ![image-20250108140529374](https://s2.loli.net/2025/01/08/aMkKwdmVuTCtW4G.png)
 
-![image-20250108140656725](https://s2.loli.net/2025/01/08/TyJutRejBLX3xGW.png)
+![image-20250119102419998](https://s2.loli.net/2025/01/19/af82Epn7sLz9mRK.png)
 
 <details><summary><kbd>Click to view more screenshots</summary></kbd>  
   <img src="https://s2.loli.net/2025/01/08/Ir1mgZCto4YS6lj.png"></br>  
