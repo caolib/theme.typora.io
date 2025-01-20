@@ -5,14 +5,16 @@
     |
     English
 </p>
-![](https://img.shields.io/github/downloads/caolib/typora-onelight-theme/total?labelColor=black&color=blue)
-[![](https://img.shields.io/github/v/release/caolib/typora-onelight-theme?labelColor=black&color=red)](https://github.com/caolib/typora-onelight-theme/releases)
-[![](https://img.shields.io/github/last-commit/caolib/typora-onelight-theme?labelColor=black&color=blue)](https://github.com/caolib/typora-onelight-theme/activity)
-[![](https://api.netlify.com/api/v1/badges/6ca72e1b-7dc6-4d51-8542-e07bf9ad0a88/deploy-status)](https://typora-theme.netlify.app)
-[![压缩打包](https://github.com/caolib/typora-onelight-theme/actions/workflows/css-compress.yml/badge.svg)](https://github.com/caolib/typora-onelight-theme/actions/workflows/css-compress.yml)
+
+![总下载量](https://img.shields.io/github/downloads/caolib/typora-onelight-theme/total?labelColor=grey&color=blue)
+[![最新发行版](https://img.shields.io/github/v/release/caolib/typora-onelight-theme?labelColor=grey&color=red)](https://github.com/caolib/typora-onelight-theme/releases)
+[![上次提交日期](https://img.shields.io/github/last-commit/caolib/typora-onelight-theme?labelColor=grey&color=blue)](https://github.com/caolib/typora-onelight-theme/activity)
+[![网站部署状态](https://api.netlify.com/api/v1/badges/6ca72e1b-7dc6-4d51-8542-e07bf9ad0a88/deploy-status)](https://typora-theme.netlify.app)
+[![css压缩打包状态](https://github.com/caolib/typora-onelight-theme/actions/workflows/css-compress.yml/badge.svg)](https://github.com/caolib/typora-onelight-theme/actions/workflows/css-compress.yml)
+![Issues](https://img.shields.io/github/issues/caolib/typora-onelight-theme)
 
 <details><summary><kbd>version history</summary></kbd>
-      <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v1.4.1/total"></br>
+  <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v1.4.1/total"></br>
   <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v1.4.0/total"></br>
   <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v1.3.0/total"></br>
   <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v1.2.4/total"></br>
@@ -118,7 +120,19 @@ The default font is set at the beginning of the `onelight.css` file, and you can
 
 ---
 
-## **5. Others**  
+## 5.Extra configuration
+
+> [!tip] 
+>
+> [typora-community-plugin](https://github.com/Typora-community-plugin/Typora-community-plugin) is a community plugin system to enhance the editing experience of Typora. You can install some plugins through this plugin system, such as adding a copy button to the code block. Please refer to the official instructions for specific installation.
+>
+> ![recording](https://s2.loli.net/2025/01/20/Fw36IH7otOaCfDW.gif)
+>
+> If you use this plugin system and install this copy button plugin, you can download the file [onelight.user.css](https://github.com/caolib/typora-onelight-theme/blob/onelight/onelight.user.css) and paste it into the theme folder. This file contains some styles for this plugin, and of course you can modify it yourself.
+
+---
+
+## 6. Others
 
 <img align='right' src="https://s2.loli.net/2025/01/04/zt7O3daMLDC5EHW.png" alt="Like" />✅ The theme looks better in integrated mode.  
 
