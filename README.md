@@ -122,9 +122,19 @@
 
 ---
 
-## 5.其他
+## 5.额外配置
 
+> [!tip] 
+>
+> [typora-community-plugin](https://github.com/typora-community-plugin/typora-community-plugin)是一个增强 Typora 编辑体验的社区插件系统，你可以通过这个插件系统安装一些插件，比如给代码块添加一个复制按钮，具体安装可以参考官方说明
+>
+> ![recording](https://s2.loli.net/2025/01/20/Fw36IH7otOaCfDW.gif)
+>
+> 如果你使用这个插件系统并且安装了这个复制按钮插件的话，可以下载[onelight.user.css](https://github.com/caolib/typora-onelight-theme/blob/onelight/onelight.user.css)文件粘贴到主题文件夹，这个文件中有一些针对这个插件的样式，当然你也可以自行修改
 
+---
+
+## 6.其他
 
 <img align='right' src="https://s2.loli.net/2025/01/04/zt7O3daMLDC5EHW.png" alt="喜欢" />✅ 一体化模式下主题效果更佳
 

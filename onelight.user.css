@@ -1,0 +1,60 @@
+/* 这是关于typora-community-plugin插件的一些样式 */
+
+:root {
+    --primary-btn-text-color: #fff;
+    /* 主题色 */
+    --main-blue: #166ff3;
+    --main-red: #ff6b6b;
+    --main-green: #2ed573;
+    --main-purple: #c94ae9;
+    --main-yellow: #f9b03d;
+    --light-color: #b2b2b2;
+}
+
+/**
+ * 下面是typora-community-plugin插件系统的样式
+ */
+
+/* 底部设置按钮组 */
+.group.bottom {
+    height: 25px;
+}
+
+/* 左侧按钮 */
+i.fa::before {
+    color: gray;
+}
+
+/* 隐藏搜索按钮 */
+.typ-ribbon-item[data-id="core.search"] {
+    display: none !important;
+}
+
+/* 左侧按钮 */
+.typ-ribbon-item {
+    /* 悬浮可点击 */
+    cursor: pointer;
+}
+
+
+/**
+ * 下面是typora-plugin-codeblock-copy-button插件的样式
+ * 这个插件可以给代码块添加一个复制按钮
+ */
+
+/* 复制按钮文本 */
+.fa-paste:before,
+.fa-clipboard:before {
+    content: "copy";
+}
+
+/* 复制按钮 */
+button.typ-block-operate-button {
+    color: white !important;
+    background-color: var(--code--bg-color-light) !important;
+}
+
+button.typ-block-operate-button:active {
+    background-color: var(--main-blue) !important;
+    color: var(--primary-btn-text-color) !important;
+}
