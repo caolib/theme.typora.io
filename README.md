@@ -95,7 +95,7 @@
 
 > [!tip] 
 >
-> **如果要使用主题中的字体，建议下载字体安装**,中文字体是 [喵字果汁体](https://cdn.jsdelivr.net/gh/caolib/cdn@main/fonts/MiaoZi-GuoZhiTi.ttf)，英文字体是 [Cascadia Code](https://cdn.jsdelivr.net/gh/caolib/cdn@main/fonts/CascadiaCode.ttf)
+> **如果要使用主题中的字体，建议下载字体安装**,中文字体是 [喵字果汁体](https://gitee.com/clibin/cdn/raw/main/fonts/MiaoZi-GuoZhiTi.ttf)，英文字体是 [Cascadia Code](https://gitee.com/clibin/cdn/raw/main/fonts/CascadiaCode.ttf)
 
 ---
 
