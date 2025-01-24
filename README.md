@@ -90,12 +90,8 @@
 
 ## **3.关于字体**
 
-在`onelight.css`文件开头设置了默认字体，可以自行修改
+在`onelight.css`文件开头设置了默认字体，可以自行修改，字体文件在[fonts](https://github.com/caolib/typora-onelight-theme/tree/onelight/onelight/fonts)文件夹下
 ![](https://github.com/user-attachments/assets/ab75260f-cff0-43b7-b8e5-dfea38e8525c)
-
-> [!tip] 
->
-> **如果要使用主题中的字体，建议下载字体安装**,中文字体是 [喵字果汁体](https://gitee.com/clibin/cdn/raw/main/fonts/MiaoZi-GuoZhiTi.ttf)，英文字体是 [Cascadia Code](https://gitee.com/clibin/cdn/raw/main/fonts/CascadiaCode.ttf)
 
 ---
 

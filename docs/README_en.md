@@ -86,15 +86,10 @@
 
 ---
 
-## **3. About Fonts**  
+## **3. About Fonts**
 
-The default font is set at the beginning of the `onelight.css` file, and you can modify it as needed.  
+The default font is set at the beginning of the file`onelight.css`, and you can modify it yourself. The font file is under the folder [fonts](https://github.com/caolib/typora-onelight-theme/tree/onelight/onelight/fonts).
 ![](https://github.com/user-attachments/assets/ab75260f-cff0-43b7-b8e5-dfea38e8525c)  
-
-> [!tip]  
->  
-> **If you want to use the fonts in the theme, it’s recommended to download and install them.**  
-> The Chinese font is [MiaoZi-GuoZhiTi](https://cdn.jsdelivr.net/gh/caolib/cdn@main/fonts/MiaoZi-GuoZhiTi.ttf), and the English font is [Cascadia Code](https://cdn.jsdelivr.net/gh/caolib/cdn@main/fonts/CascadiaCode.ttf).  
 
 ---
 
@@ -144,5 +139,5 @@ The default font is set at the beginning of the `onelight.css` file, and you can
 
 🖼️ The [img](https://github.com/caolib/typora-onelight-theme/tree/onelight/onelight/img) folder contains background images for the theme. You can replace them with any image you like, or delete them if not needed.  
 
-
+[translated by ChatGpt]
 
