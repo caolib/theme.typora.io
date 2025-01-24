@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'Cascadia Code';
+    src: url('./onelight/fonts/CascadiaCode.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '喵字果汁体';
+    src: url('./onelight/fonts/MiaoZi-GuoZhiTi.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root {
     --bg-color: #f2f2f2;
     --code-bg-color: #282c34;

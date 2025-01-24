@@ -56,9 +56,9 @@
 	一体化菜单界面
   <img src="https://s2.loli.net/2025/01/08/QF2UA9zPOW5X6ji.png"></br>
 </details>
-	
+
 ---
-	
+
 ## 2.如何使用
 
 > [!important]
