@@ -14,6 +14,7 @@
 ![Issues](https://img.shields.io/github/issues/caolib/typora-onelight-theme)
 
 <details><summary><kbd>version history</summary></kbd>
+  <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v1.4.2/total"></br>
   <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v1.4.1/total"></br>
   <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v1.4.0/total"></br>
   <img src="https://img.shields.io/github/downloads/caolib/typora-onelight-theme/v1.3.0/total"></br>
