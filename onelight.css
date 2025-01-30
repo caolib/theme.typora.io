@@ -339,9 +339,9 @@ code {
     transition: var(--transition)
 }
 
-.md-fences:hover {
+/* .md-fences:hover {
     box-shadow: 0 8px 15px rgba(0, 0, 0, .3);
-}
+} */
 
 .CodeMirror div.CodeMirror-cursor {
     border-left: 1px solid #26ed91;
@@ -657,9 +657,14 @@ p.md-toc-content:hover {
     text-decoration: line-through
 }
 
+/* 左侧文件树 */
 .file-library-node.file-tree-node.file-library-file-node.active,
 .file-node-content:hover {
     color: var(--main-blue)
+}
+
+.file-node-content {
+    cursor: pointer;
 }
 
 .md-rawblock-after,
@@ -915,10 +920,6 @@ span[alt=highlight] {
     font-weight: 700
 }
 
-::-webkit-scrollbar-thumb {
-    background: rgba(0, 0, 0, .1);
-    width: 5px
-}
 
 /* 主界面背景图片 */
 content {
@@ -1100,4 +1101,45 @@ pre.CodeMirror-line>span {
 .code-tooltip .ty-input,
 .code-tooltip input {
     min-width: auto;
+}
+
+
+/* 左侧文档列表 */
+.file-list-item.active {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: #efefef;
+    background: var(--item-bg-color-blue);
+    color: var(--active-file-text-color);
+}
+
+.file-list-item:hover {
+    color: var(--main-blue);
+    background: #42a5f514;
+}
+
+/* 滚动条 */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar:hover {
+    height: 10px;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, .2);
+    width: 10px
+}
+
+/* 一体化-返回按钮 */
+span.megamenu-menu-header-title-back[data-localize=Back]:hover {
+    color: var(--main-blue);
+}
+
+/* 一体化-主题预览卡片 */
+.theme-preview-div {
+    cursor: pointer;
 }

@@ -48,6 +48,10 @@ i.fa::before {
     content: "copy";
 }
 
+span.fa.fa-clipboard {
+    font-family: var(--main-font-family);
+}
+
 /* 复制按钮 */
 button.typ-block-operate-button {
     color: white !important;
