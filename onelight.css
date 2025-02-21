@@ -663,6 +663,10 @@ p.md-toc-content:hover {
     color: var(--main-blue)
 }
 
+.file-library-node:not(.file-node-root):focus>.file-node-content {
+    outline: unset;
+}
+
 .file-node-content {
     cursor: pointer;
 }
@@ -1142,4 +1146,9 @@ span.megamenu-menu-header-title-back[data-localize=Back]:hover {
 /* 一体化-主题预览卡片 */
 .theme-preview-div {
     cursor: pointer;
+}
+
+/* 图片悬浮样式 */
+img:hover {
+    background: white;
 }
